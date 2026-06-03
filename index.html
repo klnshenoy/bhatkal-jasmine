@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bhatkal Jasmine | Freshly Handpicked & Delivered | Bhatkal Mallige </title>
+
+<meta name="description"
+content="Experience the fragrance of authentic Bhatkal Jasmine, handpicked daily and delivered fresh to your doorstep.">
+
+<style>
+
+:root{
+    --primary:#23311d;
+    --accent:#8b6d3a;
+    --light:#faf8f3;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:var(--light);
+    overflow-x:hidden;
+}
+
+/* MAIN LAYOUT */
+
+.container{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:4rem;
+    padding:5vw;
+}
+
+/* LEFT SIDE */
+
+.left{
+    flex:1;
+    min-width:320px;
+    animation:fadeInLeft 1s ease-out;
+}
+
+.brand{
+    color:var(--accent);
+    font-weight:700;
+    letter-spacing:5px;
+    font-size:1rem;
+    margin-bottom:20px;
+    animation:fadeUp .8s ease-out;
+}
+
+h1{
+    color:var(--primary);
+    line-height:1.1;
+    font-weight:700;
+    font-size:clamp(2.8rem,6vw,5.5rem);
+    margin-bottom:25px;
+    animation:fadeUp 1s ease-out;
+}
+
+.tagline{
+    color:var(--accent);
+    font-size:clamp(1.1rem,2vw,1.7rem);
+    margin-bottom:25px;
+    font-weight:500;
+    animation:fadeUp 1.2s ease-out;
+}
+
+.description{
+    color:#555;
+    line-height:1.8;
+    font-size:clamp(1rem,1.2vw,1.2rem);
+    max-width:650px;
+    margin-bottom:40px;
+    animation:fadeUp 1.4s ease-out;
+}
+
+/* BUTTON */
+
+.cta{
+    display:inline-block;
+    text-decoration:none;
+    background:var(--primary);
+    color:white;
+    padding:18px 38px;
+    border-radius:60px;
+    font-size:1.1rem;
+    font-weight:600;
+    transition:all .3s ease;
+    animation:fadeUp 1.6s ease-out;
+}
+
+.cta:hover{
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+/* RIGHT SIDE */
+
+.right{
+    flex:1;
+    min-width:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:fadeInRight 1.2s ease-out;
+}
+
+.image-card{
+    width:100%;
+    max-width:750px;
+    aspect-ratio:4/5;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 25px 70px rgba(0,0,0,.18);
+    transition:all .5s ease;
+}
+
+.image-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 35px 80px rgba(0,0,0,.22);
+}
+
+.image-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .8s ease;
+}
+
+.image-card:hover img{
+    transform:scale(1.05);
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeInLeft{
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeInRight{
+    from{
+        opacity:0;
+        transform:translateX(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:2rem;
+        padding:1.5rem;
+    }
+
+    .description{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .cta{
+        width:100%;
+        max-width:350px;
+    }
+
+    .image-card{
+        width:100%;
+        max-width:700px;
+        aspect-ratio:16/10;
+        border-radius:20px;
+    }
+
+    h1{
+        font-size:clamp(2.2rem,9vw,3.5rem);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="brand">
+            BHATKAL JASMINE
+        </div>
+
+        <h1>
+            The Fragrance of Authentic Bhatkal Jasmine
+        </h1>
+
+        <div class="tagline">
+            Handpicked at dawn. Delivered fresh to your doorstep.
+        </div>
+
+        <div class="description">
+            Experience the unmatched fragrance and freshness of premium
+            Bhatkal Jasmine, sourced directly from trusted growers and
+            delivered with care. Perfect for pooja, weddings,
+            celebrations, gifting, and everyday elegance.
+        </div>
+
+        <a href="tel:+919036477801" class="cta">
+            📞 Call Now: +91 90364 77801
+        </a>
+
+    </div>
+
+    <div class="right">
+
+        <div class="image-card">
+
+            <img
+                src="bhatkal-jasmine-hero.png.png"
+                alt="Fresh Bhatkal Jasmine"
+                onerror="this.src='https://via.placeholder.com/800x1000?text=Bhatkal+Jasmine+Image';">
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
