@@ -4,24 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title> Order Fresh Bhatkal Jasmine in Bangalore | Authentic Bhatkal Mallige Home Delivery </title>
-<meta name="description"
-content="Order authentic Bhatkal Jasmine (Bhatkal Mallige) in Bangalore. Freshly handpicked and delivered directly to your doorstep.">
+<title>Buy Bhatkal Jasmine (Mallige) in Bangalore | Fresh Flower Delivery</title>
 
-<meta name="keywords"
-content="Bhatkal Jasmine Bangalore, Bhatkal Mallige Bangalore, Bhatkal mallige order online, Bhatkal Mallige near me">
+<meta name="description" content="Order fresh Bhatkal Jasmine (Mallige) in Bangalore with fast home delivery. Authentic flowers sourced directly from Bhatkal for weddings, puja, and special occasions.">
 
-<meta name="author"
-content="K Lakshminarayan Shenoy">
-<meta name="description"
-content="Experience the fragrance of authentic Bhatkal Jasmine, handpicked daily and delivered fresh to your doorstep.">
+<meta name="keywords" content="Bhatkal jasmine Bangalore, buy Mallige flowers Bangalore, jasmine flower delivery Bangalore, fresh jasmine garland Bangalore, Bhatkal Mallige online order">
+
+<meta name="author" content="K Lakshminarayan Shenoy">
+
+<!-- Open Graph for WhatsApp & Social Sharing -->
+<meta property="og:title" content="Fresh Bhatkal Jasmine Delivery in Bangalore">
+<meta property="og:description" content="Order authentic Bhatkal Mallige flowers in Bangalore. Fresh, fragrant, and delivered to your doorstep.">
+<meta property="og:type" content="website">
 
 <style>
 
 :root{
-    --primary:#23311d;
+    --primary:#1f2f1a;
     --accent:#8b6d3a;
-    --light:#faf8f3;
+    --bg:#faf8f3;
 }
 
 *{
@@ -31,197 +32,107 @@ content="Experience the fragrance of authentic Bhatkal Jasmine, handpicked daily
 }
 
 body{
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:var(--light);
-    overflow-x:hidden;
+    font-family: Arial, sans-serif;
+    background:var(--bg);
+    color:#333;
+    line-height:1.6;
 }
 
-/* MAIN LAYOUT */
-
-.container{
-    min-height:100vh;
+/* HERO SECTION */
+.hero{
     display:flex;
+    flex-wrap:wrap;
+    min-height:100vh;
     align-items:center;
     justify-content:center;
-    gap:4rem;
     padding:5vw;
+    gap:40px;
 }
 
-/* LEFT SIDE */
-
-.left{
+.left, .right{
     flex:1;
-    min-width:320px;
-    animation:fadeInLeft 1s ease-out;
+    min-width:300px;
 }
 
+/* BRAND */
 .brand{
     color:var(--accent);
     font-weight:700;
-    letter-spacing:5px;
-    font-size:1rem;
-    margin-bottom:20px;
-    animation:fadeUp .8s ease-out;
+    letter-spacing:4px;
+    margin-bottom:15px;
 }
 
+/* HEADINGS */
 h1{
+    font-size:clamp(2.2rem,5vw,4rem);
     color:var(--primary);
-    line-height:1.1;
-    font-weight:700;
-    font-size:clamp(2.8rem,6vw,5.5rem);
-    margin-bottom:25px;
-    animation:fadeUp 1s ease-out;
+    margin-bottom:15px;
+    line-height:1.2;
 }
 
-<h2> Fresh Bhatkal Jasmine Delivery in Bangalore</h2>
+h2{
+    font-size:1.4rem;
+    color:var(--primary);
+    margin-top:20px;
+}
 
-<p>
-We supply premium Bhatkal Mallige sourced directly from Bhatkal.
-Ideal for weddings
-Available across Bangalore with advance booking.
-</p>
+/* TEXT */
+p{
+    font-size:1.1rem;
+    margin-bottom:15px;
+    color:#555;
+}
 
 .tagline{
+    font-size:1.2rem;
     color:var(--accent);
-    font-size:clamp(1.1rem,2vw,1.7rem);
-    margin-bottom:25px;
-    font-weight:500;
-    animation:fadeUp 1.2s ease-out;
+    margin-bottom:20px;
 }
 
-.description{
-    color:#555;
-    line-height:1.8;
-    font-size:clamp(1rem,1.2vw,1.2rem);
-    max-width:650px;
-    margin-bottom:40px;
-    animation:fadeUp 1.4s ease-out;
-}
-
-/* BUTTON */
-
+/* CTA BUTTON */
 .cta{
     display:inline-block;
-    text-decoration:none;
     background:var(--primary);
-    color:white;
-    padding:18px 38px;
-    border-radius:60px;
-    font-size:1.1rem;
-    font-weight:600;
-    transition:all .3s ease;
-    animation:fadeUp 1.6s ease-out;
+    color:#fff;
+    padding:16px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
+    transition:0.3s;
 }
 
 .cta:hover{
-    transform:translateY(-4px) scale(1.03);
-    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    transform:translateY(-3px);
 }
 
-/* RIGHT SIDE */
-
-.right{
-    flex:1;
-    min-width:320px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    animation:fadeInRight 1.2s ease-out;
-}
-
+/* IMAGE */
 .image-card{
     width:100%;
-    max-width:750px;
-    aspect-ratio:4/5;
-    border-radius:30px;
+    border-radius:20px;
     overflow:hidden;
-    box-shadow:0 25px 70px rgba(0,0,0,.18);
-    transition:all .5s ease;
-}
-
-.image-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 35px 80px rgba(0,0,0,.22);
+    box-shadow:0 20px 60px rgba(0,0,0,0.15);
 }
 
 .image-card img{
     width:100%;
     height:100%;
     object-fit:cover;
-    display:block;
-    transition:transform .8s ease;
 }
 
-.image-card:hover img{
-    transform:scale(1.05);
+/* SEO CONTENT SECTION */
+.content{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-/* ANIMATIONS */
-
-@keyframes fadeInLeft{
-    from{
-        opacity:0;
-        transform:translateX(-60px);
-    }
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-}
-
-@keyframes fadeInRight{
-    from{
-        opacity:0;
-        transform:translateX(60px);
-    }
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(25px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-    .container{
-        flex-direction:column-reverse;
-        text-align:center;
-        gap:2rem;
-        padding:1.5rem;
-    }
-
-    .description{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .cta{
-        width:100%;
-        max-width:350px;
-    }
-
-    .image-card{
-        width:100%;
-        max-width:700px;
-        aspect-ratio:16/10;
-        border-radius:20px;
-    }
-
-    h1{
-        font-size:clamp(2.2rem,9vw,3.5rem);
-    }
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    font-size:0.9rem;
+    color:#777;
 }
 
 </style>
@@ -229,29 +140,29 @@ Available across Bangalore with advance booking.
 
 <body>
 
-<div class="container">
+<!-- HERO -->
+<section class="hero">
 
     <div class="left">
 
         <div class="brand">
-            BHATKAL JASMINE
+            BHATKAL JASMINE (MALLIGE)
         </div>
 
         <h1>
-            The Fragrance of Authentic Bhatkal Mallige
+            Buy Fresh Bhatkal Jasmine in Bangalore with Home Delivery
         </h1>
 
         <div class="tagline">
-            Sourced Directly from Bhatkal, Delivered fresh to your doorstep.
+            Authentic jasmine flowers sourced directly from Bhatkal
         </div>
 
-        <div class="description">
-            Experience the unmatched fragrance and freshness of premium
-            Bhatkal Jasmine, ideal for wedding and sonphool events sourced directly from Bhatkal and
-            delivered with care.
-        </div>
+        <p>
+            Order premium <strong>Bhatkal Mallige</strong> in Bangalore for weddings, puja, and special occasions.
+            Freshly handpicked flowers delivered directly to your doorstep.
+        </p>
 
-        <a href="https://wa.me/919036477801">
+        <a class="cta" href="https://wa.me/919036477801">
             💬 Order on WhatsApp
         </a>
 
@@ -260,17 +171,47 @@ Available across Bangalore with advance booking.
     <div class="right">
 
         <div class="image-card">
-
-            <img
-                src="bhatkal-jasmine-hero.png.png"
-                alt="Fresh Bhatkal Jasmine"
-                onerror="this.src='https://via.placeholder.com/800x1000?text=Bhatkal+Jasmine+Image';">
-
+            <img src="bhatkal-jasmine-hero.png.png"
+                 alt="Fresh Bhatkal Jasmine Flowers Bangalore"
+                 onerror="this.src='https://via.placeholder.com/800x1000?text=Bhatkal+Jasmine';">
         </div>
 
     </div>
 
-</div>
+</section>
+
+
+<!-- SEO CONTENT SECTION -->
+<section class="content">
+
+    <h2>Fresh Bhatkal Mallige Delivery in Bangalore</h2>
+
+    <p>
+        We supply <strong>authentic Bhatkal Jasmine flowers</strong> directly sourced from farmers in Bhatkal.
+        Known for its strong fragrance and purity, Bhatkal Mallige is widely used in weddings, temples, and cultural events.
+    </p>
+
+    <h2>Why Choose Our Bhatkal Jasmine?</h2>
+
+    <p>
+        ✔ Fresh daily sourcing from Bhatkal<br>
+        ✔ Ideal for weddings and garlands<br>
+        ✔ Same-day delivery in Bangalore (based on availability)<br>
+        ✔ Pure fragrance and high-quality flowers
+    </p>
+
+    <h2>Order Jasmine Flowers Online in Bangalore</h2>
+
+    <p>
+        Looking for <strong>jasmine flower delivery in Bangalore</strong>?
+        We make it easy to order fresh Mallige online and get it delivered to your home quickly and safely.
+    </p>
+
+</section>
+
+<footer>
+    © 2026 Bhatkal Jasmine Delivery | Bangalore, Karnataka
+</footer>
 
 </body>
 </html>
