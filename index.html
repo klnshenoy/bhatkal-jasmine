@@ -4,24 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Buy Bhatkal Mallige (Jasmine) in Bangalore | Fresh Flower Delivery</title>
+<title>Bhatkal Jasmine | Freshly Handpicked & Delivered</title>
 
-<meta name="description" content="Order fresh Bhatkal Mallige (Jasmine) in Bangalore with home delivery. Authentic flowers sourced directly from Bhatkal for weddings and sonphool events">
+<meta name="description"
+content="Experience the fragrance of authentic Bhatkal Jasmine, handpicked daily and delivered fresh to your doorstep.">
 
-<meta name="keywords" content="Bhatkal Mallige Bangalore, Mallige flowers Bangalore, Buy Bhatkal Mallige online, Bhatkal mallige near me">
-
-<meta name="author" content="K Lakshminarayan Shenoy">
-
-<meta property="og:title" content="Fresh Bhatkal Mallige Delivery in Bangalore">
-<meta property="og:description" content="Order authentic Bhatkal Mallige flowers in Bangalore. Fresh, fragrant, and delivered to your doorstep.">
-<meta property="og:type" content="website">
+<meta name="keywords"
+content="Bhatkal Jasmine, Bhatkal Mallige, Fresh Jasmine Flowers, Karnataka Jasmine, Premium Jasmine">
 
 <style>
 
 :root{
-    --primary:#1f2f1a;
+    --primary:#23311d;
     --accent:#8b6d3a;
-    --bg:#faf8f3;
+    --light:#faf8f3;
 }
 
 *{
@@ -31,189 +27,220 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
-    background:var(--bg);
-    color:#333;
-    line-height:1.6;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:var(--light);
+    overflow-x:hidden;
 
-    /* 🌟 PAGE FADE-IN */
+    /* 🌟 PAGE LOAD ANIMATION */
     animation: pageFade 1s ease-in;
 }
 
-/* HERO SECTION */
-.hero{
-    display:flex;
-    flex-wrap:wrap;
+.container{
     min-height:100vh;
+    display:flex;
     align-items:center;
     justify-content:center;
+    gap:4rem;
     padding:5vw;
-    gap:40px;
 }
 
-/* 🌟 LEFT ANIMATION */
+/* LEFT SECTION */
+
 .left{
     flex:1;
-    min-width:300px;
-    animation: slideLeft 1s ease-out;
-}
+    min-width:320px;
 
-/* 🌟 RIGHT ANIMATION */
-.right{
-    flex:1;
-    min-width:300px;
-    animation: slideRight 1s ease-out;
+    /* enhanced animation */
+    animation: fadeInLeft 1s ease-out;
 }
 
 .brand{
     color:var(--accent);
     font-weight:700;
     letter-spacing:4px;
-    margin-bottom:15px;
-    animation: fadeUp 1s ease-out;
+    font-size:clamp(0.9rem,1vw,1.2rem);
+    margin-bottom:20px;
+
+    animation: fadeUp 0.8s ease-out;
 }
 
 h1{
-    font-size:clamp(2.2rem,5vw,4rem);
     color:var(--primary);
-    margin-bottom:15px;
-    line-height:1.2;
-    animation: fadeUp 1.2s ease-out;
+    line-height:1.1;
+    font-weight:700;
+    font-size:clamp(2.8rem,6vw,5.5rem);
+    margin-bottom:25px;
+
+    animation: fadeUp 1s ease-out;
 }
 
 .tagline{
-    font-size:1.2rem;
     color:var(--accent);
-    margin-bottom:20px;
+    font-size:clamp(1.1rem,2vw,1.7rem);
+    margin-bottom:25px;
+    font-weight:500;
+
+    animation: fadeUp 1.2s ease-out;
+}
+
+.description{
+    color:#555;
+    line-height:1.8;
+    font-size:clamp(1rem,1.2vw,1.25rem);
+    max-width:650px;
+    margin-bottom:40px;
+
     animation: fadeUp 1.4s ease-out;
 }
 
-p{
-    font-size:1.1rem;
-    margin-bottom:15px;
-    color:#555;
+/* CTA */
+.cta{
+    display:inline-block;
+    text-decoration:none;
+    background:var(--primary);
+    color:white;
+    padding:18px 38px;
+    border-radius:60px;
+    font-size:clamp(1rem,1.2vw,1.15rem);
+    font-weight:600;
+    transition:all .3s ease;
+
     animation: fadeUp 1.6s ease-out;
 }
 
-/* CTA BUTTON */
-.cta{
-    display:inline-block;
-    background:var(--primary);
-    color:#fff;
-    padding:16px 30px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-top:15px;
-    transition:0.3s;
-
-    /* 🌟 BUTTON POP-IN */
-    animation: fadeUp 1.8s ease-out;
-}
-
 .cta:hover{
-    transform:translateY(-4px) scale(1.05);
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transform:translateY(-5px) scale(1.03);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
 
-/* IMAGE */
+/* RIGHT SECTION */
+
+.right{
+    flex:1;
+    min-width:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    animation: fadeInRight 1.2s ease-out;
+}
+
 .image-card{
     width:100%;
-    border-radius:20px;
+    max-width:750px;
+    border-radius:30px;
     overflow:hidden;
-    box-shadow:0 20px 60px rgba(0,0,0,0.15);
+    box-shadow:0 25px 70px rgba(0,0,0,.18);
 
-    /* 🌟 IMAGE ZOOM IN */
-    animation: zoomIn 1.5s ease-out;
+    /* 🌟 IMAGE LOAD ANIMATION */
+    animation: zoomIn 1.2s ease-out;
 }
 
 .image-card img{
     width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:transform 0.6s ease;
+    height:auto;
+    display:block;
+    transition:transform .6s ease;
 }
 
 .image-card:hover img{
     transform:scale(1.05);
 }
 
-/* CONTENT */
-.content{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-    animation: fadeUp 2s ease-out;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:30px;
-    font-size:0.9rem;
-    color:#777;
-}
-
-/* FLOATING WHATSAPP BUTTON */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    z-index: 999;
-    transition: transform 0.2s ease;
-
-    /* 🌟 PULSE ANIMATION */
-    animation: pulse 1.8s infinite;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.15);
-}
-
 /* =======================
    ANIMATIONS
 ======================= */
 
-@keyframes pageFade {
-    from {opacity:0;}
-    to {opacity:1;}
+@keyframes pageFade{
+    from{opacity:0;}
+    to{opacity:1;}
 }
 
-@keyframes slideLeft {
-    from {opacity:0; transform:translateX(-60px);}
-    to {opacity:1; transform:translateX(0);}
+@keyframes fadeInLeft{
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
 }
 
-@keyframes slideRight {
-    from {opacity:0; transform:translateX(60px);}
-    to {opacity:1; transform:translateX(0);}
+@keyframes fadeInRight{
+    from{
+        opacity:0;
+        transform:translateX(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
 }
 
-@keyframes fadeUp {
-    from {opacity:0; transform:translateY(20px);}
-    to {opacity:1; transform:translateY(0);}
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
-@keyframes zoomIn {
-    from {opacity:0; transform:scale(0.9);}
-    to {opacity:1; transform:scale(1);}
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(0.95);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
 }
 
-@keyframes pulse {
-    0% {transform:scale(1);}
-    50% {transform:scale(1.1);}
-    100% {transform:scale(1);}
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:2rem;
+        padding:1.5rem;
+        min-height:auto;
+    }
+
+    .description{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .cta{
+        width:100%;
+        max-width:350px;
+    }
+
+    .image-card{
+        width:100%;
+        max-width:700px;
+        border-radius:20px;
+    }
+
+    h1{
+        font-size:clamp(2.2rem,9vw,3.5rem);
+    }
+}
+
+/* LARGE SCREENS */
+
+@media(min-width:1800px){
+
+    .container{
+        max-width:1800px;
+        margin:auto;
+    }
 }
 
 </style>
@@ -221,31 +248,31 @@ footer{
 
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero">
+<div class="container">
 
     <div class="left">
 
         <div class="brand">
-            BHATKAL JASMINE (MALLIGE)
+            BHATKAL JASMINE
         </div>
 
         <h1>
-            Buy Fresh Bhatkal Jasmine in Bangalore with Home Delivery
+            The Fragrance of Authentic Bhatkal Jasmine
         </h1>
 
         <div class="tagline">
-            Authentic jasmine flowers sourced directly from Bhatkal
+            Handpicked at dawn. Delivered fresh to your doorstep.
         </div>
 
-        <p>
-            Order premium <strong>Bhatkal Mallige</strong> in Bangalore for weddings, puja, and special occasions.
-            Freshly handpicked flowers delivered directly to your doorstep.
-        </p>
+        <div class="description">
+            Experience the unmatched fragrance and freshness of premium
+            Bhatkal Jasmine, sourced directly from trusted growers and
+            delivered with care. Perfect for pooja, weddings,
+            celebrations, gifting, and everyday elegance.
+        </div>
 
-        <a class="cta"
-           href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)%20in%20Bangalore">
-            💬 Order on WhatsApp
+        <a href="tel:+919036477801" class="cta">
+            📞 Call Now: +91 90364 77801
         </a>
 
     </div>
@@ -253,54 +280,15 @@ footer{
     <div class="right">
 
         <div class="image-card">
-            <img src="bhatkal-jasmine-hero.png.png"
-                 alt="Fresh Bhatkal Jasmine Flowers Bangalore"
-                 onerror="this.src='https://via.placeholder.com/800x1000?text=Bhatkal+Jasmine';">
+
+            <img src="./bhatkal-jasmine-hero.png"
+                 alt="Fresh Bhatkal Jasmine">
+
         </div>
 
     </div>
 
-</section>
-
-
-<!-- CONTENT SECTION -->
-<section class="content">
-
-    <h2>Fresh Bhatkal Mallige Delivery in Bangalore</h2>
-
-    <p>
-        We supply authentic Bhatkal Jasmine flowers directly sourced from farmers in Bhatkal.
-        Known for its strong fragrance, Mallige is widely used in weddings and temples.
-    </p>
-
-    <h2>Why Choose Our Jasmine?</h2>
-
-    <p>
-        ✔ Fresh daily sourcing<br>
-        ✔ Ideal for weddings and garlands<br>
-        ✔ Home delivery in Bangalore<br>
-        ✔ Premium fragrance quality
-    </p>
-
-    <h2>Order Online</h2>
-
-    <p>
-        Looking for jasmine flower delivery in Bangalore?
-        Order directly via WhatsApp and get fresh flowers delivered to your home.
-    </p>
-
-</section>
-
-<footer>
-    © 2026 Bhatkal Jasmine Delivery | Bangalore, Karnataka
-</footer>
-
-<!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)%20in%20Bangalore"
-   class="whatsapp-float"
-   target="_blank">
-    💬
-</a>
+</div>
 
 </body>
 </html>
