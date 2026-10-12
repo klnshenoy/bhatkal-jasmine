@@ -54,11 +54,14 @@ body{
     font-family:Segoe UI, Arial, sans-serif;
     background:var(--light);
     overflow-x:hidden;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
     /* 🌟 PAGE LOAD ANIMATION */
     animation: pageFade 1s ease-in;
 }
 .container{
-    min-height:100vh;
+    flex:1;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -163,6 +166,17 @@ h1{
 .image-card:hover img{
     transform:scale(1.05);
 }
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px 20px;
+    font-size:0.75rem;
+    color:#888;
+    letter-spacing:1px;
+    text-transform:lowercase;
+}
+
 /* =======================
    ANIMATIONS
 ======================= */
@@ -217,7 +231,6 @@ h1{
         text-align:center;
         gap:2rem;
         padding:1.5rem;
-        min-height:auto;
     }
     .description{
         margin-left:auto;
@@ -263,7 +276,7 @@ h1{
         <div class="description">
             Experience the unmatched fragrance and freshness of premium
             <strong>Bhatkal Mallige</strong>, sourced directly from Bhatkal and 
-            <strong>delivered fresh across Bangalore (Bengaluru).</strong>
+            <strong>delivered fresh daily across Bangalore (Bengaluru).</strong>
             Perfect for weddings, festivals, and sonphool events.
             <br><br>
             <strong> Doorstep delivery in Bangalore | Minimum order 2 atte</strong>
@@ -284,5 +297,10 @@ h1{
         </div>
     </div>
 </div>
+
+<footer>
+    mallige order online
+</footer>
+
 </body>
 </html>
