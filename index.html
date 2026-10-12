@@ -15,40 +15,44 @@
 
     <!-- Structured Data (JSON-LD) for Local SEO & Product -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Florist",
-          "name": "Bhatkal Mallige Online Store",
-          "description": "Order authentic Bhatkal Mallige online for fresh doorstep delivery across Bangalore.",
-          "url": "https://bhatkalmallige.com/",
-          "telephone": "+919036477801",
-          "priceRange": "₹₹",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Bangalore",
-            "addressRegion": "Karnataka",
-            "addressCountry": "IN"
-          },
-          "areaServed": ["Bangalore", "Bengaluru"]
-        },
-        {
-          "@type": "Product",
-          "name": "Bhatkal Mallige (Jasmine Flowers)",
-          "description": "Freshly handpicked Bhatkal Mallige delivered daily in Bangalore.",
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "INR",
-            "price": "0",
-            "priceValidUntil": "2027-12-31",
-            "availability": "https://schema.org/InStock",
-            "url": "https://bhatkalmallige.com/"
-          }
-        }
-      ]
+      "@type": "Florist",
+      "name": "Bhatkal Mallige Online Store",
+      "description": "Order authentic Bhatkal Mallige online for fresh doorstep delivery across Bangalore.",
+      "url": "https://bhatkalmallige.com/",
+      "image": "https://bhatkalmallige.com/assets/images/logo-or-store.jpg",
+      "telephone": "+919036477801",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["Bangalore", "Bengaluru"]
+    },
+    {
+      "@type": "Product",
+      "name": "Bhatkal Mallige (Jasmine Flowers)",
+      "description": "Freshly handpicked Bhatkal Mallige delivered daily in Bangalore.",
+      "image": [
+        "https://bhatkalmallige.com/assets/images/bhatkal-mallige.jpg"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": "0",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": "https://bhatkalmallige.com/"
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
     :root{
