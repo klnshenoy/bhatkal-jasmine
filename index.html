@@ -11,7 +11,7 @@ content="Bhatkal Jasmine, Bhatkal Mallige, Bhatkal mallige delivery Bangalore, B
 
 <!-- Geo Target Tags for Local SEO -->
 <meta name="geo.region" content="IN-KA">
-<meta name="geo.placename" content="Bangalore, Bhatkal">
+<meta name="geo.placename" content="Bangalore">
 
 <!-- Open Graph for WhatsApp & Social Media Preview -->
 <meta property="og:title" content="Bhatkal Jasmine (Mallige) | Fresh Handpicked Delivery">
@@ -103,7 +103,14 @@ h1{
     margin-bottom:40px;
     animation: fadeUp 1.4s ease-out;
 }
-/* CTA */
+/* CTA GROUP & BUTTONS */
+.cta-group{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    align-items:center;
+    animation: fadeUp 1.6s ease-out;
+}
 .cta{
     display:inline-block;
     text-decoration:none;
@@ -114,12 +121,21 @@ h1{
     font-size:clamp(1rem,1.2vw,1.15rem);
     font-weight:600;
     transition:all .3s ease;
-    animation: fadeUp 1.6s ease-out;
 }
 .cta:hover{
     transform:translateY(-5px) scale(1.03);
     box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
+.cta-call{
+    background:transparent;
+    color:var(--primary);
+    border:2px solid var(--primary);
+}
+.cta-call:hover{
+    background:var(--primary);
+    color:white;
+}
+
 /* RIGHT SECTION */
 .right{
     flex:1;
@@ -207,6 +223,9 @@ h1{
         margin-left:auto;
         margin-right:auto;
     }
+    .cta-group{
+        justify-content:center;
+    }
     .cta{
         width:100%;
         max-width:350px;
@@ -239,19 +258,24 @@ h1{
             The Fragrance of Authentic Bhatkal Jasmine
         </h1>
         <div class="tagline">
-            Sourced directly from Bhatkal, Delivered fresh to your doorstep.
+            Sourced directly from Bhatkal, Delivered fresh to your doorstep across Bangalore (Bengaluru)
         </div>
         <div class="description">
             Experience the unmatched fragrance and freshness of premium
             <strong>Bhatkal Mallige</strong>, sourced directly from Bhatkal and 
-            <strong>delivered fresh daily across Bangalore (Bengaluru)</strong> and surrounding coastal regions.
+            <strong>delivered fresh daily across Bangalore (Bengaluru).</strong>
             Perfect for weddings, festivals, and sonphool events.
             <br><br>
-            <strong>Fast doorstep delivery in Bangalore | Minimum order 2 atte</strong>
+            <strong> Doorstep delivery in Bangalore | Minimum order 2 atte</strong>
         </div>
-     <a href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)" class="cta" target="_blank">
-    💬 Order on WhatsApp
-    </a>
+        <div class="cta-group">
+            <a href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)" class="cta" target="_blank">
+            💬 Order on WhatsApp
+            </a>
+            <a href="tel:+919036477801" class="cta cta-call">
+            📞 Call Us
+            </a>
+        </div>
     </div>
     <div class="right">
         <div class="image-card">
