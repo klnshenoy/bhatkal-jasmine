@@ -3,35 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhatkal Jasmine (Mallige) | Fresh Home Delivery in Bangalore</title>
+
+<!-- 1. SEO TITLE WITH EXACT TARGET KEYWORDS -->
+<title>Bhatkal Mallige Order Online | Fresh Jasmine Home Delivery Bangalore</title>
+
+<!-- 2. META DESCRIPTION OPTIMIZED FOR SEARCH SNIPPETS -->
 <meta name="description"
-content="Experience the fragrance of authentic Bhatkal Jasmine, handpicked daily in Bhatkal and delivered fresh to your doorstep in Bangalore. Minimum order 2 atte.">
-<meta name="keywords"
-content="Bhatkal Jasmine, Bhatkal Mallige, Bhatkal mallige delivery Bangalore, Bhatkal jasmine delivery Bangalore, Bhatkal Mallige order online, Bhatkal jasmine order online, bhatkal mallige near me">
+content="Bhatkal Mallige Order Online with fast home delivery in Bangalore (Bengaluru). Buy fresh, authentic Bhatkal Jasmine (ಭಟ್ಕಳ ಮಲ್ಲಿಗೆ) sourced directly. Minimum order 2 atte.">
 
-<!-- Geo Target Tags for Local SEO -->
+<!-- 3. GEO TARGETING TAGS -->
 <meta name="geo.region" content="IN-KA">
-<meta name="geo.placename" content="Bangalore">
+<meta name="geo.placename" content="Bangalore, Bhatkal">
 
-<!-- Open Graph for WhatsApp & Social Media Preview -->
-<meta property="og:title" content="Bhatkal Jasmine (Mallige) | Fresh Handpicked Delivery">
-<meta property="og:description" content="Authentic Bhatkal Mallige delivered fresh to your doorstep in Bangalore. Minimum order 2 atte.">
+<!-- 4. OPEN GRAPH FOR WHATSAPP & SOCIAL MEDIA PREVIEWS -->
+<meta property="og:title" content="Bhatkal Mallige Order Online | Fresh Daily Delivery Bangalore">
+<meta property="og:description" content="Authentic Bhatkal Jasmine delivered fresh across Bangalore. Order on WhatsApp or Call directly.">
 <meta property="og:image" content="./bhatkal-jasmine-hero.png.png">
 <meta property="og:type" content="website">
 
-<!-- Structured JSON-LD Data for Local SEO -->
+<!-- 5. STRUCTURED SCHEMA (JSON-LD) FOR GOOGLE INDEXING -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Florist",
-  "name": "Bhatkal Mallige Delivery",
-  "description": "Authentic fresh Bhatkal Jasmine (Bhatkal Mallige) sourced directly from Bhatkal and delivered in Bangalore.",
+  "name": "Bhatkal Mallige Online Store",
+  "description": "Order authentic Bhatkal Mallige online for fresh doorstep delivery across Bangalore.",
   "url": "https://bhatkalmallige.com/",
   "telephone": "+919036477801",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangalore",
+    "addressRegion": "Karnataka",
+    "addressCountry": "IN"
+  },
   "areaServed": [
     "Bangalore",
-    "Bengaluru"
-  ]
+    "Bengaluru",
+    "Bhatkal"
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "Bhatkal Mallige (Jasmine Flowers)",
+      "description": "Freshly handpicked Bhatkal Mallige delivered daily."
+    }
+  }
 }
 </script>
 
@@ -53,7 +71,6 @@ body{
     display:flex;
     flex-direction:column;
     min-height:100vh;
-    /* 🌟 PAGE LOAD ANIMATION */
     animation: pageFade 1s ease-in;
 }
 .container{
@@ -68,7 +85,6 @@ body{
 .left{
     flex:1;
     min-width:320px;
-    /* enhanced animation */
     animation: fadeInLeft 1s ease-out;
 }
 .brand{
@@ -83,7 +99,7 @@ h1{
     color:var(--primary);
     line-height:1.1;
     font-weight:700;
-    font-size:clamp(2.8rem,6vw,5.5rem);
+    font-size:clamp(2.5rem,5.5vw,4.8rem);
     margin-bottom:25px;
     animation: fadeUp 1s ease-out;
 }
@@ -102,6 +118,12 @@ h1{
     margin-bottom:40px;
     animation: fadeUp 1.4s ease-out;
 }
+.description h2{
+    font-size:1.3rem;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
 /* CTA GROUP & BUTTONS */
 .cta-group{
     display:flex;
@@ -150,7 +172,6 @@ h1{
     border-radius:30px;
     overflow:hidden;
     box-shadow:0 25px 70px rgba(0,0,0,.18);
-    /* 🌟 IMAGE LOAD ANIMATION */
     animation: zoomIn 1.2s ease-out;
 }
 .image-card img{
@@ -173,53 +194,13 @@ footer{
     text-transform:lowercase;
 }
 
-/* =======================
-   ANIMATIONS
-======================= */
-@keyframes pageFade{
-    from{opacity:0;}
-    to{opacity:1;}
-}
-@keyframes fadeInLeft{
-    from{
-        opacity:0;
-        transform:translateX(-60px);
-    }
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-}
-@keyframes fadeInRight{
-    from{
-        opacity:0;
-        transform:translateX(60px);
-    }
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-}
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(20px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-@keyframes zoomIn{
-    from{
-        opacity:0;
-        transform:scale(0.95);
-    }
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
-}
+/* ANIMATIONS */
+@keyframes pageFade{ from{opacity:0;} to{opacity:1;} }
+@keyframes fadeInLeft{ from{opacity:0; transform:translateX(-60px);} to{opacity:1; transform:translateX(0);} }
+@keyframes fadeInRight{ from{opacity:0; transform:translateX(60px);} to{opacity:1; transform:translateX(0);} }
+@keyframes fadeUp{ from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:translateY(0);} }
+@keyframes zoomIn{ from{opacity:0; transform:scale(0.95);} to{opacity:1; transform:scale(1);} }
+
 /* MOBILE */
 @media(max-width:900px){
     .container{
@@ -228,32 +209,15 @@ footer{
         gap:2rem;
         padding:1.5rem;
     }
-    .description{
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .cta-group{
-        justify-content:center;
-    }
-    .cta{
-        width:100%;
-        max-width:350px;
-    }
-    .image-card{
-        width:100%;
-        max-width:700px;
-        border-radius:20px;
-    }
-    h1{
-        font-size:clamp(2.2rem,9vw,3.5rem);
-    }
+    .description{ margin-left:auto; margin-right:auto; }
+    .cta-group{ justify-content:center; }
+    .cta{ width:100%; max-width:350px; }
+    .image-card{ width:100%; max-width:700px; border-radius:20px; }
+    h1{ font-size:clamp(2.2rem,9vw,3.5rem); }
 }
 /* LARGE SCREENS */
 @media(min-width:1800px){
-    .container{
-        max-width:1800px;
-        margin:auto;
-    }
+    .container{ max-width:1800px; margin:auto; }
 }
 </style>
 </head>
@@ -263,20 +227,28 @@ footer{
         <div class="brand">
             BHATKAL MALLIGE (JASMINE)
         </div>
+        
+        <!-- TARGET KEYWORD IN H1 -->
         <h1>
-            Order Bhatkal Mallige Online in Bengaluru
+            Order Authentic Bhatkal Mallige Online
         </h1>
+        
         <div class="tagline">
             Sourced directly from Bhatkal, Delivered fresh to your doorstep across Bangalore (Bengaluru)
         </div>
+        
         <div class="description">
-            Experience the unmatched fragrance and freshness of premium
-            <strong>Bhatkal Mallige</strong>, sourced directly from Bhatkal and 
-            <strong>delivered fresh daily across Bangalore (Bengaluru).</strong>
-            Perfect for weddings, festivals, and sonphool events.
-            <br><br>
-            <strong> Doorstep delivery in Bangalore | Minimum order 2 atte</strong>
+            <h2>Fresh Bhatkal Mallige Delivery in Bangalore</h2>
+            <p>
+                Experience the unmatched fragrance and freshness of premium 
+                <strong>Bhatkal Mallige (ಭಟ್ಕಳ ಮಲ್ಲಿಗೆ)</strong>, sourced directly from Bhatkal and 
+                <strong>delivered fresh daily across Bangalore</strong>. 
+                Perfect for weddings, pujas, festivals, and special occasions.
+            </p>
+            <br>
+            <strong>Doorstep delivery in Bangalore | Minimum order 2 atte</strong>
         </div>
+
         <div class="cta-group">
             <a href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)" class="cta" target="_blank">
             💬 Order on WhatsApp
@@ -286,12 +258,17 @@ footer{
             </a>
         </div>
     </div>
+    
     <div class="right">
         <div class="image-card">
-            <img src="./bhatkal-jasmine-hero.png.png"
-                 alt="Fresh Bhatkal Jasmine">
+            <img src="./bhatkal-jasmine-hero.png.png" alt="Fresh Bhatkal Jasmine Flower Online Delivery Bangalore">
         </div>
     </div>
 </div>
+
+<footer>
+    bhatkal mallige order online | doorstep delivery bangalore
+</footer>
+
 </body>
 </html>
