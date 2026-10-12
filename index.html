@@ -21,7 +21,7 @@ content="Bhatkal Mallige Order Online with fast home delivery in Bangalore (Beng
 <meta property="og:image" content="./bhatkal-jasmine-hero.png.png">
 <meta property="og:type" content="website">
 
-<!-- 5. STRUCTURED SCHEMA (JSON-LD) FOR GOOGLE INDEXING -->
+<!-- 5. STRUCTURED SCHEMA (JSON-LD) - FIXED FOR GOOGLE SEARCH CONSOLE -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,13 +42,23 @@ content="Bhatkal Mallige Order Online with fast home delivery in Bangalore (Beng
     "Bengaluru",
     "Bhatkal"
   ],
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Product",
-      "name": "Bhatkal Mallige (Jasmine Flowers)",
-      "description": "Freshly handpicked Bhatkal Mallige delivered daily."
-    }
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Jasmine Delivery Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Bhatkal Mallige (Jasmine Flowers)",
+          "description": "Freshly handpicked Bhatkal Mallige delivered daily."
+        },
+        "priceCurrency": "INR",
+        "price": "0",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock"
+      }
+    ]
   }
 }
 </script>
@@ -267,7 +277,7 @@ footer{
 </div>
 
 <footer>
-    bhatkal mallige order online | doorstep delivery bangalore
+    mallige order online | bhatkal mallige doorstep delivery bangalore
 </footer>
 
 </body>
