@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -285,3 +285,713 @@ h1{
 /* STAR RATING */
 
 .rating{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin:10px 0 20px;
+}
+
+.rating input{
+    display:none;
+}
+
+.rating label{
+    font-size:2rem;
+    color:#ccc;
+    cursor:pointer;
+}
+
+.rating label:hover{
+    color:#d4a017;
+}
+
+.rating input:checked + label{
+    color:#d4a017;
+}
+
+
+/* SUBMIT BUTTON */
+
+.feedback-submit{
+    border:none;
+    cursor:pointer;
+}
+
+
+/* STATUS MESSAGE */
+
+.feedback-message{
+    margin-top:15px;
+    font-weight:600;
+    color:var(--primary);
+}
+
+
+/* REVIEWS */
+
+.reviews{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.review-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    text-align:left;
+}
+
+.review-stars{
+    color:#d4a017;
+    font-size:1.1rem;
+    margin-bottom:10px;
+}
+
+.review-text{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.review-name{
+    color:var(--primary);
+    font-weight:700;
+}
+
+.review-date{
+    color:#999;
+    font-size:.8rem;
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    text-align:center;
+    padding:15px 20px;
+    font-size:.75rem;
+    color:#888;
+    letter-spacing:1px;
+    text-transform:lowercase;
+}
+
+
+/* ==========================
+   ANIMATIONS
+========================== */
+
+@keyframes pageFade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes fadeInLeft{
+    from{
+        opacity:0;
+        transform:translateX(-60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeInRight{
+    from{
+        opacity:0;
+        transform:translateX(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:2rem;
+        padding:1.5rem;
+    }
+
+    .description{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .cta-group{
+        justify-content:center;
+    }
+
+    .cta{
+        width:100%;
+        max-width:350px;
+    }
+
+    .image-card{
+        width:100%;
+        max-width:700px;
+        border-radius:20px;
+    }
+
+    h1{
+        font-size:clamp(2.2rem,9vw,3.5rem);
+    }
+
+    .feedback-section{
+        padding:35px 15px;
+    }
+
+    .feedback-form{
+        padding:20px;
+    }
+
+    .feedback-section h2{
+        font-size:1.8rem;
+    }
+}
+
+
+@media(min-width:1800px){
+
+    .container{
+        max-width:1800px;
+        margin:auto;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+     MAIN HERO SECTION
+========================== -->
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="brand">
+            BHATKAL MALLIGE (JASMINE)
+        </div>
+
+        <h1>
+            Order Authentic Bhatkal Mallige Online
+        </h1>
+
+        <div class="tagline">
+            Sourced directly from Bhatkal, Delivered fresh to your doorstep across Bangalore (Bengaluru)
+        </div>
+
+        <div class="description">
+
+            <h2>
+                Fresh Bhatkal Mallige Delivery in Bangalore
+            </h2>
+
+            <p>
+                Experience the unmatched fragrance and freshness of premium
+                <strong>Bhatkal Mallige (ಭಟ್ಕಳ ಮಲ್ಲಿಗೆ)</strong>, sourced directly from Bhatkal and
+                <strong>delivered fresh daily across Bangalore</strong>.
+                Perfect for weddings, pujas, festivals, and special occasions.
+            </p>
+
+            <br>
+
+            <strong>
+                Doorstep delivery in Bangalore | Minimum order 2 atte
+            </strong>
+
+        </div>
+
+
+        <!-- CTA BUTTONS -->
+
+        <div class="cta-group">
+
+            <a href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)"
+               class="cta"
+               target="_blank">
+
+                💬 Order on WhatsApp
+
+            </a>
+
+
+            <a href="tel:+919036477801"
+               class="cta cta-call">
+
+                📞 Call Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- IMAGE -->
+
+    <div class="right">
+
+        <div class="image-card">
+
+            <img src="./bhatkal-jasmine-hero.png.png"
+                 alt="Fresh Bhatkal mallige Flower Online Delivery Bangalore">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================
+     CUSTOMER FEEDBACK SECTION
+========================== -->
+
+<section class="feedback-section">
+
+    <h2>
+        What Our Customers Say
+    </h2>
+
+    <p class="feedback-subtitle">
+        Loved our Bhatkal Mallige? Share your experience with us.
+    </p>
+
+
+    <!-- FEEDBACK FORM -->
+
+    <div class="feedback-form">
+
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Your Name"
+            maxlength="50"
+            required>
+
+
+        <textarea
+            id="customerFeedback"
+            placeholder="Tell us about your experience..."
+            maxlength="500"
+            required></textarea>
+
+
+        <!-- STAR RATING -->
+
+        <div class="rating">
+
+            <input type="radio"
+                   name="rating"
+                   id="star5"
+                   value="5"
+                   checked>
+
+            <label for="star5">★</label>
+
+
+            <input type="radio"
+                   name="rating"
+                   id="star4"
+                   value="4">
+
+            <label for="star4">★</label>
+
+
+            <input type="radio"
+                   name="rating"
+                   id="star3"
+                   value="3">
+
+            <label for="star3">★</label>
+
+
+            <input type="radio"
+                   name="rating"
+                   id="star2"
+                   value="2">
+
+            <label for="star2">★</label>
+
+
+            <input type="radio"
+                   name="rating"
+                   id="star1"
+                   value="1">
+
+            <label for="star1">★</label>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="cta feedback-submit"
+            onclick="submitFeedback()">
+
+            Submit Feedback
+
+        </button>
+
+
+        <div id="feedbackMessage"
+             class="feedback-message">
+        </div>
+
+    </div>
+
+
+    <!-- APPROVED REVIEWS APPEAR HERE -->
+
+    <div id="reviews"
+         class="reviews">
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+    mallige order online | bhatkal mallige doorstep delivery bangalore
+</footer>
+
+
+
+<!-- ==========================
+     SUPABASE
+========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+<script>
+
+/*
+====================================================
+SUPABASE CONFIGURATION
+====================================================
+
+REPLACE THESE TWO VALUES.
+
+1. SUPABASE_URL
+2. SUPABASE_KEY
+
+DO NOT PUT YOUR SUPABASE SECRET/SERVICE ROLE KEY HERE.
+
+====================================================
+*/
+
+const SUPABASE_URL =
+    "YOUR_SUPABASE_PROJECT_URL";
+
+const SUPABASE_KEY =
+    "YOUR_SUPABASE_PUBLISHABLE_KEY";
+
+
+const supabaseClient =
+    window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+    );
+
+
+
+/* =================================================
+   LOAD APPROVED CUSTOMER FEEDBACK
+================================================= */
+
+async function loadFeedback(){
+
+    const reviewsContainer =
+        document.getElementById("reviews");
+
+
+    const { data, error } =
+        await supabaseClient
+
+        .from("feedback")
+
+        .select(
+            "name, message, rating, created_at"
+        )
+
+        .eq("approved", true)
+
+        .order(
+            "created_at",
+            { ascending:false }
+        );
+
+
+    if(error){
+
+        console.error(
+            "Error loading feedback:",
+            error
+        );
+
+        reviewsContainer.innerHTML = `
+            <p style="color:#777;">
+                Customer reviews are temporarily unavailable.
+            </p>
+        `;
+
+        return;
+    }
+
+
+    reviewsContainer.innerHTML = "";
+
+
+    if(!data || data.length === 0){
+
+        reviewsContainer.innerHTML = `
+            <p style="color:#777;">
+                Be the first to share your experience!
+            </p>
+        `;
+
+        return;
+    }
+
+
+    data.forEach(review => {
+
+        const stars =
+            "★".repeat(review.rating) +
+            "☆".repeat(5 - review.rating);
+
+
+        const date =
+            new Date(review.created_at)
+            .toLocaleDateString("en-IN");
+
+
+        const card =
+            document.createElement("div");
+
+
+        card.className =
+            "review-card";
+
+
+        card.innerHTML = `
+
+            <div class="review-stars">
+                ${stars}
+            </div>
+
+            <div class="review-text">
+                "${escapeHTML(review.message)}"
+            </div>
+
+            <div class="review-name">
+                — ${escapeHTML(review.name)}
+            </div>
+
+            <div class="review-date">
+                ${date}
+            </div>
+
+        `;
+
+
+        reviewsContainer.appendChild(card);
+
+    });
+
+}
+
+
+
+/* =================================================
+   SUBMIT CUSTOMER FEEDBACK
+================================================= */
+
+async function submitFeedback(){
+
+    const name =
+        document
+        .getElementById("customerName")
+        .value
+        .trim();
+
+
+    const message =
+        document
+        .getElementById("customerFeedback")
+        .value
+        .trim();
+
+
+    const ratingElement =
+        document.querySelector(
+            'input[name="rating"]:checked'
+        );
+
+
+    const status =
+        document.getElementById(
+            "feedbackMessage"
+        );
+
+
+    /* VALIDATE NAME */
+
+    if(name.length < 2){
+
+        status.textContent =
+            "Please enter your name.";
+
+        return;
+
+    }
+
+
+    /* VALIDATE FEEDBACK */
+
+    if(message.length < 5){
+
+        status.textContent =
+            "Please enter a little more feedback.";
+
+        return;
+
+    }
+
+
+    status.textContent =
+        "Submitting your feedback...";
+
+
+    const { error } =
+        await supabaseClient
+
+        .from("feedback")
+
+        .insert({
+
+            name:name,
+
+            message:message,
+
+            rating:Number(
+                ratingElement.value
+            ),
+
+            approved:false
+
+        });
+
+
+    if(error){
+
+        console.error(error);
+
+        status.textContent =
+            "Sorry, something went wrong. Please try again.";
+
+        return;
+
+    }
+
+
+    /* CLEAR FORM */
+
+    document
+        .getElementById("customerName")
+        .value = "";
+
+
+    document
+        .getElementById("customerFeedback")
+        .value = "";
+
+
+    status.textContent =
+        "Thank you! Your feedback has been submitted and will appear after approval.";
+
+}
+
+
+
+/* =================================================
+   SECURITY
+================================================= */
+
+function escapeHTML(text){
+
+    return text
+
+        .replace(/&/g,"&amp;")
+
+        .replace(/</g,"&lt;")
+
+        .replace(/>/g,"&gt;")
+
+        .replace(/"/g,"&quot;")
+
+        .replace(/'/g,"&#039;");
+
+}
+
+
+
+/* =================================================
+   LOAD REVIEWS WHEN PAGE OPENS
+================================================= */
+
+loadFeedback();
+
+</script>
+
+
+</body>
+</html>
+```
