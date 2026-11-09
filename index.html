@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +6,7 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>
 Bhatkal Mallige Order Online | Fresh Jasmine Home Delivery Bangalore
@@ -32,88 +31,148 @@ content="./bhatkal-jasmine-hero.png.png">
 content="website">
 
 
-<!-- ==========================================
+<!-- ==================================================
      STRUCTURED DATA
-========================================== -->
+================================================== -->
 
 <script type="application/ld+json">
+
 {
   "@context": "https://schema.org",
+
   "@graph": [
+
     {
       "@type": "Florist",
+
       "name": "Bhatkal Mallige Online Store",
-      "description": "Order authentic Bhatkal Mallige online for fresh doorstep delivery across Bangalore.",
-      "url": "https://bhatkalmallige.com/",
-      "image": "https://bhatkalmallige.com/assets/images/logo-or-store.jpg",
-      "telephone": "+919036477801",
-      "priceRange": "₹₹",
+
+      "description":
+      "Order authentic Bhatkal Mallige online for fresh doorstep delivery across Bangalore.",
+
+      "url":
+      "https://bhatkalmallige.com/",
+
+      "image":
+      "https://bhatkalmallige.com/assets/images/logo-or-store.jpg",
+
+      "telephone":
+      "+919036477801",
+
+      "priceRange":
+      "₹₹",
+
       "address": {
+
         "@type": "PostalAddress",
-        "addressLocality": "Bangalore",
-        "addressRegion": "Karnataka",
-        "addressCountry": "IN"
+
+        "addressLocality":
+        "Bangalore",
+
+        "addressRegion":
+        "Karnataka",
+
+        "addressCountry":
+        "IN"
       },
+
       "areaServed": [
         "Bangalore",
         "Bengaluru"
       ]
     },
+
     {
       "@type": "Product",
-      "name": "Bhatkal Mallige (Jasmine Flowers)",
-      "description": "Freshly handpicked Bhatkal Mallige delivered daily in Bangalore.",
+
+      "name":
+      "Bhatkal Mallige (Jasmine Flowers)",
+
+      "description":
+      "Freshly handpicked Bhatkal Mallige delivered daily in Bangalore.",
+
       "image": [
         "https://bhatkalmallige.com/assets/images/bhatkal-mallige.jpg"
       ],
+
       "offers": {
+
         "@type": "Offer",
-        "priceCurrency": "INR",
-        "price": "0",
-        "priceValidUntil": "2027-12-31",
-        "availability": "https://schema.org/InStock",
-        "url": "https://bhatkalmallige.com/"
+
+        "priceCurrency":
+        "INR",
+
+        "price":
+        "0",
+
+        "priceValidUntil":
+        "2027-12-31",
+
+        "availability":
+        "https://schema.org/InStock",
+
+        "url":
+        "https://bhatkalmallige.com/"
       }
     }
+
   ]
 }
+
 </script>
 
 
 <style>
 
 /* ==================================================
-   BASIC
+   GLOBAL
 ================================================== */
 
 :root {
+
     --primary: #23311d;
+
     --accent: #8b6d3a;
+
     --light: #faf8f3;
+
 }
 
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
 
 body {
+
     font-family:
         'Segoe UI',
         Arial,
         sans-serif;
 
-    background: var(--light);
+    background:
+        var(--light);
 
-    overflow-x: hidden;
+    overflow-x:
+        hidden;
 
-    display: flex;
-    flex-direction: column;
+    display:
+        flex;
 
-    min-height: 100vh;
+    flex-direction:
+        column;
 
-    animation: pageFade 1s ease-in;
+    min-height:
+        100vh;
+
+    animation:
+        pageFade 1s ease-in;
+
 }
 
 
@@ -122,149 +181,226 @@ body {
 ================================================== */
 
 .container {
+
     flex: 1;
 
-    display: flex;
+    display:
+        flex;
 
-    align-items: center;
-    justify-content: center;
+    align-items:
+        center;
 
-    gap: 4rem;
+    justify-content:
+        center;
 
-    padding: 5vw;
+    gap:
+        4rem;
+
+    padding:
+        5vw;
+
 }
 
 
 /* ==================================================
-   LEFT
+   LEFT CONTENT
 ================================================== */
 
 .left {
+
     flex: 1;
 
-    min-width: 320px;
+    min-width:
+        320px;
 
     animation:
         fadeInLeft 1s ease-out;
+
 }
 
 .brand {
-    color: var(--accent);
 
-    font-weight: 700;
+    color:
+        var(--accent);
 
-    letter-spacing: 4px;
+    font-weight:
+        700;
+
+    letter-spacing:
+        4px;
 
     font-size:
-        clamp(0.9rem, 1vw, 1.2rem);
+        clamp(
+            .9rem,
+            1vw,
+            1.2rem
+        );
 
-    margin-bottom: 20px;
+    margin-bottom:
+        20px;
 
     animation:
-        fadeUp 0.8s ease-out;
+        fadeUp .8s ease-out;
+
 }
 
 h1 {
-    color: var(--primary);
 
-    line-height: 1.1;
+    color:
+        var(--primary);
 
-    font-weight: 700;
+    line-height:
+        1.1;
+
+    font-weight:
+        700;
 
     font-size:
-        clamp(2.5rem, 5.5vw, 4.8rem);
+        clamp(
+            2.5rem,
+            5.5vw,
+            4.8rem
+        );
 
-    margin-bottom: 25px;
+    margin-bottom:
+        25px;
 
     animation:
         fadeUp 1s ease-out;
+
 }
 
 .tagline {
-    color: var(--accent);
+
+    color:
+        var(--accent);
 
     font-size:
-        clamp(1.1rem, 2vw, 1.7rem);
+        clamp(
+            1.1rem,
+            2vw,
+            1.7rem
+        );
 
-    margin-bottom: 25px;
+    margin-bottom:
+        25px;
 
-    font-weight: 500;
+    font-weight:
+        500;
 
     animation:
         fadeUp 1.2s ease-out;
+
 }
 
 .description {
-    color: #555;
 
-    line-height: 1.8;
+    color:
+        #555;
+
+    line-height:
+        1.8;
 
     font-size:
-        clamp(1rem, 1.2vw, 1.25rem);
+        clamp(
+            1rem,
+            1.2vw,
+            1.25rem
+        );
 
-    max-width: 650px;
+    max-width:
+        650px;
 
-    margin-bottom: 40px;
+    margin-bottom:
+        40px;
 
     animation:
         fadeUp 1.4s ease-out;
+
 }
 
 .description h2 {
-    font-size: 1.3rem;
 
-    color: var(--primary);
+    font-size:
+        1.3rem;
 
-    margin-bottom: 10px;
+    color:
+        var(--primary);
+
+    margin-bottom:
+        10px;
+
 }
 
 
 /* ==================================================
-   BUTTONS
+   BUTTON GROUP
 ================================================== */
 
 .cta-group {
-    display: flex;
 
-    gap: 15px;
+    display:
+        flex;
 
-    flex-wrap: wrap;
+    gap:
+        15px;
 
-    align-items: center;
+    flex-wrap:
+        wrap;
+
+    align-items:
+        center;
 
     animation:
         fadeUp 1.6s ease-out;
+
 }
 
 .cta {
-    display: inline-block;
 
-    text-decoration: none;
+    display:
+        inline-block;
 
-    background: var(--primary);
+    text-decoration:
+        none;
 
-    color: white;
+    background:
+        var(--primary);
 
-    padding: 18px 38px;
+    color:
+        white;
 
-    border-radius: 60px;
+    padding:
+        18px 38px;
+
+    border-radius:
+        60px;
 
     font-size:
-        clamp(1rem, 1.2vw, 1.15rem);
+        clamp(
+            1rem,
+            1.2vw,
+            1.15rem
+        );
 
-    font-weight: 600;
+    font-weight:
+        600;
 
-    transition: all 0.3s ease;
+    transition:
+        all .3s ease;
+
 }
 
 .cta:hover {
+
     transform:
         translateY(-5px)
         scale(1.03);
 
     box-shadow:
         0 15px 35px
-        rgba(0, 0, 0, 0.18);
+        rgba(0,0,0,.18);
+
 }
 
 
@@ -273,35 +409,50 @@ h1 {
 ================================================== */
 
 .call-wrapper {
-    position: relative;
 
-    display: inline-block;
+    position:
+        relative;
+
+    display:
+        inline-block;
+
 }
 
 .cta-call {
-    background: transparent;
 
-    color: var(--primary);
+    background:
+        transparent;
+
+    color:
+        var(--primary);
 
     border:
         2px solid var(--primary);
+
 }
 
 .cta-call:hover {
-    background: var(--primary);
 
-    color: white;
+    background:
+        var(--primary);
+
+    color:
+        white;
+
 }
 
 
 /* ==================================================
-   DESKTOP CONTACT HOVER
+   DESKTOP CONTACT POPUP
 ================================================== */
 
 .contact-hover {
-    position: absolute;
 
-    left: 50%;
+    position:
+        absolute;
+
+    left:
+        50%;
 
     bottom:
         calc(100% + 12px);
@@ -310,41 +461,54 @@ h1 {
         translateX(-50%)
         translateY(10px);
 
-    width: 270px;
+    width:
+        270px;
 
-    background: white;
+    background:
+        white;
 
-    border-radius: 16px;
+    border-radius:
+        16px;
 
-    padding: 20px;
+    padding:
+        20px;
 
     box-shadow:
         0 15px 40px
-        rgba(0, 0, 0, 0.18);
+        rgba(0,0,0,.18);
 
-    text-align: center;
+    text-align:
+        center;
 
-    opacity: 0;
+    opacity:
+        0;
 
-    visibility: hidden;
+    visibility:
+        hidden;
 
     transition:
-        opacity 0.25s ease,
-        transform 0.25s ease,
-        visibility 0.25s ease;
+        opacity .25s ease,
+        transform .25s ease,
+        visibility .25s ease;
 
-    z-index: 1000;
+    z-index:
+        1000;
 
-    pointer-events: none;
 }
 
 .contact-hover::after {
-    content: "";
 
-    position: absolute;
+    content:
+        "";
 
-    top: 100%;
-    left: 50%;
+    position:
+        absolute;
+
+    top:
+        100%;
+
+    left:
+        50%;
 
     transform:
         translateX(-50%);
@@ -357,96 +521,134 @@ h1 {
 
     border-top:
         8px solid white;
+
 }
 
 .call-wrapper:hover
 .contact-hover {
-    opacity: 1;
 
-    visibility: visible;
+    opacity:
+        1;
+
+    visibility:
+        visible;
 
     transform:
         translateX(-50%)
         translateY(0);
+
 }
 
 .contact-hover-title {
-    color: var(--primary);
 
-    font-weight: 700;
+    color:
+        var(--primary);
 
-    font-size: 1rem;
+    font-weight:
+        700;
 
-    margin-bottom: 8px;
+    margin-bottom:
+        8px;
+
 }
 
 .contact-number {
-    color: var(--accent);
 
-    font-size: 1.15rem;
+    color:
+        var(--accent);
 
-    font-weight: 700;
+    font-size:
+        1.15rem;
 
-    margin-bottom: 5px;
+    font-weight:
+        700;
+
 }
 
 .contact-info {
-    color: #777;
 
-    font-size: 0.85rem;
+    color:
+        #777;
+
+    font-size:
+        .85rem;
+
+    margin-top:
+        5px;
+
 }
 
 
 /* ==================================================
-   RIGHT IMAGE
+   IMAGE
 ================================================== */
 
 .right {
-    flex: 1;
 
-    min-width: 320px;
+    flex:
+        1;
 
-    display: flex;
+    min-width:
+        320px;
 
-    justify-content: center;
+    display:
+        flex;
 
-    align-items: center;
+    justify-content:
+        center;
+
+    align-items:
+        center;
 
     animation:
         fadeInRight 1.2s ease-out;
+
 }
 
 .image-card {
-    width: 100%;
 
-    max-width: 750px;
+    width:
+        100%;
 
-    border-radius: 30px;
+    max-width:
+        750px;
 
-    overflow: hidden;
+    border-radius:
+        30px;
+
+    overflow:
+        hidden;
 
     box-shadow:
         0 25px 70px
-        rgba(0, 0, 0, 0.18);
+        rgba(0,0,0,.18);
 
     animation:
         zoomIn 1.2s ease-out;
+
 }
 
 .image-card img {
-    width: 100%;
 
-    height: auto;
+    width:
+        100%;
 
-    display: block;
+    height:
+        auto;
+
+    display:
+        block;
 
     transition:
-        transform 0.6s ease;
+        transform .6s ease;
+
 }
 
 .image-card:hover img {
+
     transform:
         scale(1.05);
+
 }
 
 
@@ -455,9 +657,12 @@ h1 {
 ================================================== */
 
 .feedback-section {
-    width: 100%;
 
-    max-width: 1200px;
+    width:
+        100%;
+
+    max-width:
+        1200px;
 
     margin:
         60px auto 40px;
@@ -465,21 +670,32 @@ h1 {
     padding:
         50px 25px;
 
-    text-align: center;
+    text-align:
+        center;
+
 }
 
 .feedback-section h2 {
-    color: var(--primary);
 
-    font-size: 2.2rem;
+    color:
+        var(--primary);
 
-    margin-bottom: 10px;
+    font-size:
+        2.2rem;
+
+    margin-bottom:
+        10px;
+
 }
 
 .feedback-subtitle {
-    color: #666;
 
-    margin-bottom: 35px;
+    color:
+        #666;
+
+    margin-bottom:
+        35px;
+
 }
 
 
@@ -488,56 +704,77 @@ h1 {
 ================================================== */
 
 .feedback-form {
-    max-width: 600px;
+
+    max-width:
+        600px;
 
     margin:
-        0 auto 45px;
+        0 auto 50px;
 
-    padding: 30px;
+    padding:
+        30px;
 
-    background: white;
+    background:
+        white;
 
-    border-radius: 20px;
+    border-radius:
+        20px;
 
     box-shadow:
         0 10px 35px
-        rgba(0, 0, 0, 0.08);
+        rgba(0,0,0,.08);
+
 }
 
 .feedback-form input,
 .feedback-form textarea {
-    width: 100%;
 
-    padding: 14px;
+    width:
+        100%;
 
-    margin-bottom: 15px;
+    padding:
+        14px;
+
+    margin-bottom:
+        15px;
 
     border:
         1px solid #ddd;
 
-    border-radius: 10px;
+    border-radius:
+        10px;
 
-    font-family: inherit;
+    font-family:
+        inherit;
 
-    font-size: 1rem;
+    font-size:
+        1rem;
+
 }
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-    outline: none;
+
+    outline:
+        none;
 
     border-color:
         var(--accent);
 
     box-shadow:
         0 0 0 3px
-        rgba(139, 109, 58, 0.12);
+        rgba(139,109,58,.12);
+
 }
 
 .feedback-form textarea {
-    min-height: 120px;
 
-    resize: vertical;
+    min-height:
+        120px;
+
+    resize:
+        vertical;
+
 }
 
 
@@ -546,51 +783,60 @@ h1 {
 ================================================== */
 
 .rating {
-    display: flex;
 
-    flex-direction: row-reverse;
+    display:
+        flex;
 
-    justify-content: center;
+    flex-direction:
+        row-reverse;
 
-    gap: 4px;
+    justify-content:
+        center;
+
+    gap:
+        4px;
 
     margin:
         10px 0 20px;
+
 }
 
 .rating input {
-    display: none;
+
+    display:
+        none;
+
 }
 
 .rating label {
-    font-size: 2rem;
 
-    color: #ccc;
+    font-size:
+        2rem;
 
-    cursor: pointer;
+    color:
+        #ccc;
+
+    cursor:
+        pointer;
 
     transition:
-        color 0.15s ease;
+        color .15s ease;
+
 }
 
 .rating label:hover,
 .rating label:hover ~ label {
-    color: #d4a017;
+
+    color:
+        #d4a017;
+
 }
 
 .rating input:checked ~ label {
-    color: #d4a017;
-}
 
+    color:
+        #d4a017;
 
-/* ==================================================
-   FEEDBACK BUTTON
-================================================== */
-
-.feedback-submit {
-    border: none;
-
-    cursor: pointer;
 }
 
 
@@ -599,13 +845,19 @@ h1 {
 ================================================== */
 
 .feedback-message {
-    margin-top: 15px;
 
-    min-height: 24px;
+    margin-top:
+        15px;
 
-    font-weight: 600;
+    min-height:
+        24px;
 
-    color: var(--primary);
+    font-weight:
+        600;
+
+    color:
+        var(--primary);
+
 }
 
 
@@ -614,131 +866,182 @@ h1 {
 ================================================== */
 
 .reviews {
-    max-width: 1100px;
+
+    max-width:
+        1100px;
 
     margin:
-        30px auto 20px;
+        35px auto 50px;
 
     padding:
-        25px 20px 50px;
+        20px;
 
-    display: grid;
+    display:
+        grid;
+
+    /*
+       IMPORTANT:
+       Reviews have a fixed maximum width
+       rather than stretching to fill the page.
+    */
 
     grid-template-columns:
         repeat(
             auto-fit,
-            minmax(260px, 1fr)
+            minmax(
+                300px,
+                380px
+            )
         );
 
-    gap:
-        45px 30px;
+    justify-content:
+        center;
 
-    align-items: start;
+    align-items:
+        start;
+
+    gap:
+        45px 35px;
+
 }
 
 
 /* ==================================================
-   COMPACT POST-IT NOTE
+   POST-IT NOTE
 ================================================== */
 
 .review-card {
 
-    position: relative;
+    position:
+        relative;
+
+    width:
+        100%;
 
     /*
-    IMPORTANT:
-    No fixed/minimum height.
-    The note grows only according
-    to the review content.
+       Height is determined by
+       the amount of review text.
     */
 
-    min-height: 0;
+    height:
+        auto;
 
-    height: auto;
+    min-height:
+        0;
+
+    padding:
+        32px 25px 23px;
 
     background:
         linear-gradient(
             135deg,
-            #fff6bf 0%,
+            #fff8c9 0%,
             #ffe98a 100%
         );
 
-    padding:
-        34px 24px 25px;
-
-    border-radius: 4px;
-
     border:
         1px solid
-        rgba(150, 120, 40, 0.25);
+        rgba(
+            150,
+            120,
+            40,
+            .28
+        );
+
+    border-radius:
+        4px;
 
     box-shadow:
 
         3px 5px 0
-        rgba(150, 120, 40, 0.12),
+        rgba(
+            150,
+            120,
+            40,
+            .12
+        ),
 
-        0 10px 22px
-        rgba(0, 0, 0, 0.13);
+        0 12px 25px
+        rgba(
+            0,
+            0,
+            0,
+            .14
+        );
 
-    text-align: left;
+    text-align:
+        left;
 
     transform:
         rotate(-1.5deg);
 
     transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+        transform .25s ease,
+        box-shadow .25s ease;
 
-    overflow: visible;
+    overflow:
+        visible;
+
 }
 
 
 /* ==================================================
-   DIFFERENT POST-IT ROTATIONS
+   DIFFERENT ROTATIONS
 ================================================== */
 
 .review-card:nth-child(2) {
+
     transform:
         rotate(1.5deg);
+
 }
 
 .review-card:nth-child(3) {
+
     transform:
-        rotate(-0.8deg);
+        rotate(-1deg);
+
 }
 
 .review-card:nth-child(4) {
+
     transform:
         rotate(1.2deg);
+
 }
 
 .review-card:nth-child(5) {
+
     transform:
-        rotate(-1.8deg);
+        rotate(-1.5deg);
+
 }
 
 .review-card:nth-child(6) {
+
     transform:
-        rotate(0.8deg);
+        rotate(.8deg);
+
 }
 
 
 /* ==================================================
-   POST-IT HOVER
+   HOVER
 ================================================== */
 
 .review-card:hover {
 
     transform:
         rotate(0deg)
-        translateY(-5px);
+        translateY(-6px);
 
     box-shadow:
+        5px 15px 28px
+        rgba(0,0,0,.18);
 
-        4px 12px 25px
-        rgba(0, 0, 0, 0.18);
+    z-index:
+        5;
 
-    z-index: 5;
 }
 
 
@@ -748,27 +1051,34 @@ h1 {
 
 .review-card::before {
 
-    content: "📌";
+    content:
+        "📌";
 
-    position: absolute;
+    position:
+        absolute;
 
-    top: -16px;
+    top:
+        -17px;
 
-    left: 50%;
+    left:
+        50%;
 
     transform:
         translateX(-50%)
         rotate(-8deg);
 
-    font-size: 30px;
+    font-size:
+        29px;
+
+    z-index:
+        3;
 
     filter:
         drop-shadow(
             2px 3px 2px
-            rgba(0, 0, 0, 0.25)
+            rgba(0,0,0,.25)
         );
 
-    z-index: 3;
 }
 
 
@@ -778,27 +1088,34 @@ h1 {
 
 .review-card::after {
 
-    content: "";
+    content:
+        "";
 
-    position: absolute;
+    position:
+        absolute;
 
-    inset: 0;
+    inset:
+        0;
 
-    pointer-events: none;
+    pointer-events:
+        none;
 
-    opacity: 0.15;
+    opacity:
+        .13;
 
     background-image:
         radial-gradient(
-            rgba(100, 70, 20, 0.35)
-            0.7px,
-            transparent 0.7px
+            rgba(100,70,20,.4)
+            .7px,
+            transparent .7px
         );
 
     background-size:
         7px 7px;
 
-    border-radius: 4px;
+    border-radius:
+        4px;
+
 }
 
 
@@ -808,27 +1125,36 @@ h1 {
 
 .review-card > * {
 
-    position: relative;
+    position:
+        relative;
 
-    z-index: 2;
+    z-index:
+        2;
+
 }
 
 
 /* ==================================================
-   REVIEW STARS
+   STARS ON POST-IT
 ================================================== */
 
 .review-stars {
 
-    color: #b27b00;
+    color:
+        #b27b00;
 
-    font-size: 1.05rem;
+    font-size:
+        1.05rem;
 
-    letter-spacing: 2px;
+    letter-spacing:
+        2px;
 
-    margin-bottom: 10px;
+    margin-bottom:
+        10px;
 
-    line-height: 1;
+    line-height:
+        1;
+
 }
 
 
@@ -838,20 +1164,29 @@ h1 {
 
 .review-text {
 
-    color: #4d4025;
+    color:
+        #4d4025;
 
     font-family:
         "Comic Sans MS",
         "Segoe Print",
         cursive;
 
-    font-size: 0.95rem;
+    font-size:
+        .95rem;
 
-    line-height: 1.55;
+    line-height:
+        1.5;
 
-    margin-bottom: 14px;
+    margin-bottom:
+        14px;
 
-    font-style: italic;
+    font-style:
+        italic;
+
+    overflow-wrap:
+        anywhere;
+
 }
 
 
@@ -861,16 +1196,23 @@ h1 {
 
 .review-name {
 
-    color: #3c321e;
+    color:
+        #3c321e;
 
     font-family:
         "Comic Sans MS",
         "Segoe Print",
         cursive;
 
-    font-size: 0.95rem;
+    font-size:
+        .95rem;
 
-    font-weight: 700;
+    font-weight:
+        700;
+
+    overflow-wrap:
+        anywhere;
+
 }
 
 
@@ -880,15 +1222,19 @@ h1 {
 
 .review-date {
 
-    color: #75643c;
+    color:
+        #75643c;
 
     font-family:
         "Segoe Print",
         cursive;
 
-    font-size: 0.7rem;
+    font-size:
+        .7rem;
 
-    margin-top: 5px;
+    margin-top:
+        5px;
+
 }
 
 
@@ -897,18 +1243,25 @@ h1 {
 ================================================== */
 
 footer {
-    text-align: center;
+
+    text-align:
+        center;
 
     padding:
         15px 20px;
 
-    font-size: 0.75rem;
+    font-size:
+        .75rem;
 
-    color: #888;
+    color:
+        #888;
 
-    letter-spacing: 1px;
+    letter-spacing:
+        1px;
 
-    text-transform: lowercase;
+    text-transform:
+        lowercase;
+
 }
 
 
@@ -925,79 +1278,100 @@ footer {
     to {
         opacity: 1;
     }
+
 }
 
 @keyframes fadeInLeft {
 
     from {
+
         opacity: 0;
 
         transform:
             translateX(-60px);
+
     }
 
     to {
+
         opacity: 1;
 
         transform:
             translateX(0);
+
     }
+
 }
 
 @keyframes fadeInRight {
 
     from {
+
         opacity: 0;
 
         transform:
             translateX(60px);
+
     }
 
     to {
+
         opacity: 1;
 
         transform:
             translateX(0);
+
     }
+
 }
 
 @keyframes fadeUp {
 
     from {
+
         opacity: 0;
 
         transform:
             translateY(20px);
+
     }
 
     to {
+
         opacity: 1;
 
         transform:
             translateY(0);
+
     }
+
 }
 
 @keyframes zoomIn {
 
     from {
+
         opacity: 0;
 
         transform:
-            scale(0.95);
+            scale(.95);
+
     }
 
     to {
+
         opacity: 1;
 
         transform:
             scale(1);
+
     }
+
 }
 
 
 /* ==================================================
-   TABLET / MOBILE
+   TABLET
 ================================================== */
 
 @media (max-width: 900px) {
@@ -1007,39 +1381,55 @@ footer {
         flex-direction:
             column-reverse;
 
-        text-align: center;
+        text-align:
+            center;
 
-        gap: 2rem;
+        gap:
+            2rem;
 
-        padding: 1.5rem;
+        padding:
+            1.5rem;
+
     }
 
     .description {
 
-        margin-left: auto;
+        margin-left:
+            auto;
 
-        margin-right: auto;
+        margin-right:
+            auto;
+
     }
 
     .cta-group {
 
-        justify-content: center;
+        justify-content:
+            center;
+
     }
 
     .cta {
 
-        width: 100%;
+        width:
+            100%;
 
-        max-width: 350px;
+        max-width:
+            350px;
+
     }
 
     .image-card {
 
-        width: 100%;
+        width:
+            100%;
 
-        max-width: 700px;
+        max-width:
+            700px;
 
-        border-radius: 20px;
+        border-radius:
+            20px;
+
     }
 
     h1 {
@@ -1050,59 +1440,73 @@ footer {
                 9vw,
                 3.5rem
             );
+
     }
+
+    .contact-hover {
+
+        display:
+            none;
+
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
 
     .feedback-section {
 
         padding:
             35px 15px;
+
     }
 
     .feedback-form {
 
-        padding: 20px;
+        padding:
+            20px;
+
     }
 
     .feedback-section h2 {
 
-        font-size: 1.8rem;
+        font-size:
+            1.8rem;
+
     }
-
-    /* Hide desktop contact popup */
-
-    .contact-hover {
-
-        display: none;
-    }
-}
-
-
-/* ==================================================
-   MOBILE POST-ITS
-================================================== */
-
-@media (max-width: 600px) {
 
     .reviews {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            minmax(
+                0,
+                1fr
+            );
+
+        max-width:
+            420px;
 
         padding:
-            20px 15px 40px;
+            15px;
 
-        gap: 40px;
+        gap:
+            40px;
 
-        max-width: 500px;
     }
 
     .review-card {
 
+        width:
+            100%;
+
         padding:
-            34px 22px 24px;
+            32px 22px 23px;
 
-        min-height: 0;
-
-        width: 100%;
     }
 
     .review-card:nth-child(2),
@@ -1113,6 +1517,7 @@ footer {
 
         transform:
             rotate(1deg);
+
     }
 
     .review-card:hover {
@@ -1120,7 +1525,9 @@ footer {
         transform:
             translateY(-5px)
             rotate(0deg);
+
     }
+
 }
 
 
@@ -1132,10 +1539,14 @@ footer {
 
     .container {
 
-        max-width: 1800px;
+        max-width:
+            1800px;
 
-        margin: auto;
+        margin:
+            auto;
+
     }
+
 }
 
 </style>
@@ -1147,7 +1558,7 @@ footer {
 
 
 <!-- ==================================================
-     HERO SECTION
+     MAIN HERO
 ================================================== -->
 
 <div class="container">
@@ -1167,11 +1578,16 @@ footer {
 
 
         <div class="tagline">
-            Sourced directly from Bhatkal, Delivered fresh to your doorstep across Bangalore (Bengaluru)
+
+            Sourced directly from Bhatkal,
+            Delivered fresh to your doorstep
+            across Bangalore (Bengaluru)
+
         </div>
 
 
         <div class="description">
+
 
             <h2>
                 Fresh Bhatkal Mallige Delivery in Bangalore
@@ -1180,7 +1596,8 @@ footer {
 
             <p>
 
-                Experience the unmatched fragrance and freshness of premium
+                Experience the unmatched fragrance
+                and freshness of premium
 
                 <strong>
                     Bhatkal Mallige (ಭಟ್ಕಳ ಮಲ್ಲಿಗೆ)
@@ -1194,7 +1611,8 @@ footer {
 
                 .
 
-                Perfect for weddings, pujas, festivals, and special occasions.
+                Perfect for weddings, pujas,
+                festivals, and special occasions.
 
             </p>
 
@@ -1203,15 +1621,15 @@ footer {
 
 
             <strong>
-                Doorstep delivery in Bangalore | Minimum order 2 atte
+                Doorstep delivery in Bangalore |
+                Minimum order 2 atte
             </strong>
+
 
         </div>
 
 
-        <!-- ==========================================
-             BUTTONS
-        ========================================== -->
+        <!-- BUTTONS -->
 
         <div class="cta-group">
 
@@ -1241,8 +1659,6 @@ footer {
                 </a>
 
 
-                <!-- DESKTOP CONTACT DETAILS -->
-
                 <div class="contact-hover">
 
                     <div class="contact-hover-title">
@@ -1261,14 +1677,14 @@ footer {
 
             </div>
 
+
         </div>
+
 
     </div>
 
 
-    <!-- ==========================================
-         IMAGE
-    ========================================== -->
+    <!-- IMAGE -->
 
     <div class="right">
 
@@ -1281,6 +1697,7 @@ footer {
         </div>
 
     </div>
+
 
 </div>
 
@@ -1299,13 +1716,17 @@ footer {
 
 
     <p class="feedback-subtitle">
-        Loved our Bhatkal Mallige? Share your experience with us.
+
+        Loved our Bhatkal Mallige?
+        Share your experience with us.
+
     </p>
 
 
-    <!-- ==========================================
+
+    <!-- ==================================================
          FEEDBACK FORM
-    ========================================== -->
+    ================================================== -->
 
     <div class="feedback-form">
 
@@ -1322,6 +1743,7 @@ footer {
             id="customerFeedback"
             placeholder="Tell us about your experience..."
             maxlength="500"></textarea>
+
 
 
         <!-- STAR RATING -->
@@ -1384,7 +1806,9 @@ footer {
                 ★
             </label>
 
+
         </div>
+
 
 
         <!-- SUBMIT -->
@@ -1404,12 +1828,14 @@ footer {
             class="feedback-message">
         </div>
 
+
     </div>
 
 
-    <!-- ==========================================
-         APPROVED REVIEWS
-    ========================================== -->
+
+    <!-- ==================================================
+         REVIEWS
+    ================================================== -->
 
     <div
         id="reviews"
@@ -1445,16 +1871,9 @@ src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
 
 <script>
 
+
 /* ==================================================
-   SUPABASE CONFIGURATION
-==================================================
-
-IMPORTANT:
-
-Use your Supabase Project URL and publishable key.
-
-Do NOT use a service-role/secret key here.
-
+   SUPABASE CONFIG
 ================================================== */
 
 const SUPABASE_URL =
@@ -1464,10 +1883,6 @@ const SUPABASE_URL =
 const SUPABASE_KEY =
     "sb_publishable_gVN0ViaWxfv2Xyhumy72pA_yXttNXj3";
 
-
-/* ==================================================
-   CREATE SUPABASE CLIENT
-================================================== */
 
 let supabaseClient = null;
 
@@ -1497,7 +1912,43 @@ catch (error) {
 
 
 /* ==================================================
-   LOAD APPROVED FEEDBACK
+   ESCAPE HTML
+================================================== */
+
+function escapeHTML(text) {
+
+    return String(text)
+
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+
+        .replace(
+            /</g,
+            "&lt;"
+        )
+
+        .replace(
+            />/g,
+            "&gt;"
+        )
+
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+
+        .replace(
+            /'/g,
+            "&#039;"
+        );
+
+}
+
+
+/* ==================================================
+   LOAD APPROVED REVIEWS
 ================================================== */
 
 async function loadFeedback() {
@@ -1521,7 +1972,10 @@ async function loadFeedback() {
 
     try {
 
-        const result =
+        const {
+            data,
+            error
+        } =
             await supabaseClient
 
                 .from("feedback")
@@ -1538,23 +1992,16 @@ async function loadFeedback() {
                 .order(
                     "created_at",
                     {
-                        ascending: false
+                        ascending:
+                            false
                     }
                 );
-
-
-        const data =
-            result.data;
-
-
-        const error =
-            result.error;
 
 
         if (error) {
 
             console.error(
-                "Error loading feedback:",
+                "Error loading reviews:",
                 error
             );
 
@@ -1563,7 +2010,8 @@ async function loadFeedback() {
         }
 
 
-        reviewsContainer.innerHTML = "";
+        reviewsContainer.innerHTML =
+            "";
 
 
         if (
@@ -1579,14 +2027,19 @@ async function loadFeedback() {
         data.forEach(
             function(review) {
 
-                const rating =
+
+                let rating =
+                    Number(
+                        review.rating
+                    ) || 0;
+
+
+                rating =
                     Math.max(
                         0,
                         Math.min(
                             5,
-                            Number(
-                                review.rating
-                            ) || 0
+                            rating
                         )
                     );
 
@@ -1648,15 +2101,17 @@ async function loadFeedback() {
                     card
                 );
 
+
             }
         );
+
 
     }
 
     catch (error) {
 
         console.error(
-            "Unexpected feedback loading error:",
+            "Unexpected review loading error:",
             error
         );
 
@@ -1701,9 +2156,7 @@ async function submitFeedback() {
         );
 
 
-    /* ==============================================
-       VALIDATE NAME
-    ============================================== */
+    /* VALIDATE NAME */
 
     if (
         name.length < 2
@@ -1717,9 +2170,7 @@ async function submitFeedback() {
     }
 
 
-    /* ==============================================
-       VALIDATE FEEDBACK
-    ============================================== */
+    /* VALIDATE MESSAGE */
 
     if (
         message.length < 5
@@ -1733,9 +2184,7 @@ async function submitFeedback() {
     }
 
 
-    /* ==============================================
-       CHECK SUPABASE
-    ============================================== */
+    /* CHECK SUPABASE */
 
     if (!supabaseClient) {
 
@@ -1757,11 +2206,10 @@ async function submitFeedback() {
 
     try {
 
-        /* ==========================================
-           INSERT INTO SUPABASE
-        ========================================== */
 
-        const result =
+        const {
+            error
+        } =
             await supabaseClient
 
                 .from("feedback")
@@ -1787,19 +2235,14 @@ async function submitFeedback() {
                 });
 
 
-        /* ==========================================
-           CHECK ERROR
-        ========================================== */
+        /* ERROR */
 
-        if (
-            result.error
-        ) {
+        if (error) {
 
             console.error(
                 "Feedback submission error:",
-                result.error
+                error
             );
-
 
             status.textContent =
                 "Sorry, something went wrong. Please try again.";
@@ -1809,22 +2252,22 @@ async function submitFeedback() {
         }
 
 
-        /* ==========================================
-           SUCCESS
-        ========================================== */
+        /* SUCCESS */
 
         document
             .getElementById(
                 "customerName"
             )
-            .value = "";
+            .value =
+            "";
 
 
         document
             .getElementById(
                 "customerFeedback"
             )
-            .value = "";
+            .value =
+            "";
 
 
         status.textContent =
@@ -1835,6 +2278,7 @@ async function submitFeedback() {
             "Feedback submitted successfully."
         );
 
+
     }
 
     catch (error) {
@@ -1843,7 +2287,6 @@ async function submitFeedback() {
             "Unexpected feedback submission error:",
             error
         );
-
 
         status.textContent =
             "Sorry, something went wrong. Please try again.";
@@ -1854,46 +2297,11 @@ async function submitFeedback() {
 
 
 /* ==================================================
-   ESCAPE HTML
-================================================== */
-
-function escapeHTML(text) {
-
-    return String(text)
-
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-
-        .replace(
-            /</g,
-            "&lt;"
-        )
-
-        .replace(
-            />/g,
-            "&gt;"
-        )
-
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-
-        .replace(
-            /'/g,
-            "&#039;"
-        );
-
-}
-
-
-/* ==================================================
-   START
+   LOAD REVIEWS WHEN PAGE OPENS
 ================================================== */
 
 loadFeedback();
+
 
 </script>
 
