@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +8,6 @@
 <title>Bhatkal Mallige Order Online | Bridal Jade, Moggin Jade & Phoola Phanthi | Bangalore</title>
 
 <meta name="description" content="Order authentic Bhatkal Mallige, Bridal Jade, Moggin Jade and Phoola Phanthi online. Fresh traditional jasmine and flower decorations delivered across Bangalore.">
-
 <meta name="keywords" content="Bhatkal Mallige, Bhatkal Jasmine, Bridal Jade, Moggin Jade, Phoola Phanthi, jasmine hair decoration, bridal jasmine Bangalore">
 
 <meta property="og:title" content="Bhatkal Mallige | Bridal Jade, Moggin Jade & Phoola Phanthi">
@@ -69,6 +68,30 @@ body {
 .left {
   flex: 1;
   min-width: 320px;
+}
+
+.right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  width: 100%;
+  max-width: 540px;
+  height: 520px;
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.13);
+  background: #f3eee5;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand {
@@ -195,7 +218,7 @@ h1 {
 /* PRODUCT GALLERY */
 
 .products-section {
-  max-width: 1250px;
+  max-width: 1350px;
   margin: 30px auto 70px;
   padding: 30px 25px;
 }
@@ -510,6 +533,19 @@ footer {
     padding: 1.5rem;
   }
 
+  .left {
+    min-width: 0;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .image-card {
+    height: 380px;
+    max-width: 600px;
+  }
+
   .description {
     margin-left: auto;
     margin-right: auto;
@@ -575,6 +611,10 @@ footer {
     top: 12px;
     right: 15px;
   }
+
+  .image-card {
+    height: 330px;
+  }
 }
 </style>
 </head>
@@ -596,6 +636,7 @@ footer {
     </div>
 
     <div class="description">
+
       <h2>Fresh Bhatkal Mallige Delivery in Bangalore</h2>
 
       <p>
@@ -608,6 +649,7 @@ footer {
       <br>
 
       <strong>Doorstep delivery in Bangalore | Minimum order 2 atte</strong>
+
     </div>
 
     <div class="cta-group">
@@ -633,6 +675,7 @@ footer {
         </div>
 
       </div>
+
     </div>
   </div>
 
@@ -646,7 +689,7 @@ footer {
 
 </div>
 
-<!-- PRODUCTS: ONLY THE FOUR FINAL IMAGES -->
+<!-- PRODUCTS: ONLY THE SIX FINAL GITHUB IMAGES -->
 
 <section class="products-section">
 
@@ -661,6 +704,7 @@ footer {
 
   <div class="products-grid">
 
+    <!-- IMAGE 1 -->
     <div class="product-card">
       <div class="product-image" onclick="openImage(this)">
         <img
@@ -668,63 +712,132 @@ footer {
           alt="Bridal and traditional flower decoration"
           loading="lazy">
       </div>
+
       <div class="product-content">
         <h3>Bridal Jade</h3>
         <p>Elegant traditional floral hair decoration for bridal and special occasions.</p>
+
         <a class="product-button"
            href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Bridal%20Jade"
-           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+           target="_blank" rel="noopener">
+          💬 Enquire on WhatsApp
+        </a>
+
         <div class="product-note">Custom designs available</div>
       </div>
     </div>
 
+    <!-- IMAGE 2 -->
     <div class="product-card">
       <div class="product-image" onclick="openImage(this)">
         <img
           src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.18.25.jpeg"
-          alt="Moggin Jade flower decoration"
+          alt="Traditional jasmine flower decoration"
           loading="lazy">
       </div>
+
       <div class="product-content">
         <h3>Moggin Jade</h3>
         <p>Beautiful traditional jasmine decoration for weddings and festive occasions.</p>
+
         <a class="product-button"
            href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Moggin%20Jade"
-           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+           target="_blank" rel="noopener">
+          💬 Enquire on WhatsApp
+        </a>
+
         <div class="product-note">Freshly prepared to order</div>
       </div>
     </div>
 
+    <!-- IMAGE 3 -->
     <div class="product-card">
       <div class="product-image" onclick="openImage(this)">
         <img
           src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.26.09.jpeg"
-          alt="Traditional Phoola Phanthi flower decoration"
+          alt="Traditional flower decoration"
           loading="lazy">
       </div>
+
       <div class="product-content">
         <h3>Phoola Phanthi</h3>
         <p>Traditional floral decoration suitable for bridal hairstyles, weddings and special occasions.</p>
+
         <a class="product-button"
            href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Phoola%20Phanthi"
-           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+           target="_blank" rel="noopener">
+          💬 Enquire on WhatsApp
+        </a>
+
         <div class="product-note">Custom arrangements available</div>
       </div>
     </div>
 
+    <!-- IMAGE 4 -->
     <div class="product-card">
       <div class="product-image" onclick="openImage(this)">
         <img
-          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.28.55.jpeg"
-          alt="Traditional bridal flower decoration"
+          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.41.54.jpeg"
+          alt="Traditional flower design"
           loading="lazy">
       </div>
+
       <div class="product-content">
-        <h3>Traditional Flower Decoration</h3>
-        <p>Explore another traditional flower design. Contact us for availability and custom orders.</p>
+        <h3>Traditional Flower Design</h3>
+        <p>Explore another traditional flower design for weddings and special occasions.</p>
+
         <a class="product-button"
-           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20your%20traditional%20flower%20decoration"
-           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20your%20traditional%20flower%20design"
+           target="_blank" rel="noopener">
+          💬 Enquire on WhatsApp
+        </a>
+
+        <div class="product-note">Contact us for details</div>
+      </div>
+    </div>
+
+    <!-- IMAGE 5 -->
+    <div class="product-card">
+      <div class="product-image" onclick="openImage(this)">
+        <img
+          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.41.55%20%281%29.jpeg"
+          alt="Traditional jasmine flower design"
+          loading="lazy">
+      </div>
+
+      <div class="product-content">
+        <h3>Traditional Jasmine Design</h3>
+        <p>A beautiful flower arrangement for traditional and festive occasions.</p>
+
+        <a class="product-button"
+           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20your%20traditional%20jasmine%20design"
+           target="_blank" rel="noopener">
+          💬 Enquire on WhatsApp
+        </a>
+
+        <div class="product-note">Contact us for details</div>
+      </div>
+    </div>
+
+    <!-- IMAGE 6 -->
+    <div class="product-card">
+      <div class="product-image" onclick="openImage(this)">
+        <img
+          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.41.55.jpeg"
+          alt="Traditional bridal flower design"
+          loading="lazy">
+      </div>
+
+      <div class="product-content">
+        <h3>Bridal Flower Design</h3>
+        <p>Traditional floral styling for bridal looks, weddings and special celebrations.</p>
+
+        <a class="product-button"
+           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20your%20bridal%20flower%20design"
+           target="_blank" rel="noopener">
+          💬 Enquire on WhatsApp
+        </a>
+
         <div class="product-note">Contact us for details</div>
       </div>
     </div>
@@ -800,7 +913,11 @@ footer {
 
     </div>
 
-    <button type="button" class="cta" id="submitFeedbackButton" onclick="submitFeedback()">
+    <button
+      type="button"
+      class="cta"
+      id="submitFeedbackButton"
+      onclick="submitFeedback()">
       Submit Feedback
     </button>
 
@@ -821,6 +938,7 @@ footer {
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
+
 /* SUPABASE CONFIGURATION */
 
 const SUPABASE_URL = "https://qgwyafwumviecmfgnezi.supabase.co";
@@ -833,10 +951,13 @@ try {
     SUPABASE_URL,
     SUPABASE_KEY
   );
+
   console.log("Supabase initialized successfully.");
+
 } catch (error) {
   console.error("Supabase initialization error:", error);
 }
+
 
 /* IMAGE POPUP */
 
@@ -846,6 +967,7 @@ const modalImage = document.getElementById("modalImage");
 let modalHistoryOpen = false;
 
 function openImage(imageContainer) {
+
   const image = imageContainer.querySelector("img");
 
   if (!image) return;
@@ -855,6 +977,7 @@ function openImage(imageContainer) {
 
   imageModal.classList.add("active");
   imageModal.setAttribute("aria-hidden", "false");
+
   document.body.style.overflow = "hidden";
 
   // Add a browser history entry so mobile Back closes the popup.
@@ -865,14 +988,17 @@ function openImage(imageContainer) {
 }
 
 function closeImage(fromBackButton = false) {
+
   if (!imageModal.classList.contains("active")) return;
 
   imageModal.classList.remove("active");
   imageModal.setAttribute("aria-hidden", "true");
+
   modalImage.src = "";
   document.body.style.overflow = "";
 
   if (modalHistoryOpen) {
+
     modalHistoryOpen = false;
 
     if (!fromBackButton) {
@@ -883,21 +1009,27 @@ function closeImage(fromBackButton = false) {
 
 // Mobile/browser Back button closes the image popup.
 window.addEventListener("popstate", function() {
+
   if (imageModal.classList.contains("active")) {
     closeImage(true);
   }
+
 });
 
 // Escape key closes the popup.
 document.addEventListener("keydown", function(event) {
+
   if (event.key === "Escape") {
     closeImage();
   }
+
 });
+
 
 /* ESCAPE HTML */
 
 function escapeHTML(value) {
+
   return String(value ?? "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
@@ -906,9 +1038,11 @@ function escapeHTML(value) {
     .replace(/'/g, "&#039;");
 }
 
+
 /* LOAD APPROVED REVIEWS */
 
 async function loadFeedback() {
+
   const reviewsContainer = document.getElementById("reviews");
 
   if (!supabaseClient) {
@@ -917,6 +1051,7 @@ async function loadFeedback() {
   }
 
   try {
+
     const { data, error } = await supabaseClient
       .from("feedback")
       .select("name, message, rating, created_at")
@@ -933,6 +1068,7 @@ async function loadFeedback() {
     if (!data || data.length === 0) return;
 
     data.forEach(function(review) {
+
       let rating = Number(review.rating) || 0;
       rating = Math.max(0, Math.min(5, rating));
 
@@ -953,16 +1089,21 @@ async function loadFeedback() {
       `;
 
       reviewsContainer.appendChild(card);
+
     });
 
   } catch (error) {
+
     console.error("Unexpected review loading error:", error);
+
   }
 }
+
 
 /* SUBMIT FEEDBACK */
 
 async function submitFeedback() {
+
   const name = document.getElementById("customerName").value.trim();
   const message = document.getElementById("customerFeedback").value.trim();
 
@@ -986,10 +1127,12 @@ async function submitFeedback() {
   }
 
   status.textContent = "Submitting your feedback...";
+
   button.disabled = true;
   button.textContent = "Submitting...";
 
   try {
+
     const { error } = await supabaseClient
       .from("feedback")
       .insert({
@@ -1000,9 +1143,11 @@ async function submitFeedback() {
       });
 
     if (error) {
+
       console.error("Feedback submission error:", error);
       status.textContent = "Unable to submit feedback. Please try again.";
       return;
+
     }
 
     document.getElementById("customerName").value = "";
@@ -1012,17 +1157,23 @@ async function submitFeedback() {
     status.textContent = "Thank you! Your feedback has been submitted!";
 
   } catch (error) {
+
     console.error("Unexpected feedback submission error:", error);
     status.textContent = "Something went wrong. Please try again.";
+
   } finally {
+
     button.disabled = false;
     button.textContent = "Submit Feedback";
+
   }
 }
+
 
 /* INITIAL LOAD */
 
 loadFeedback();
+
 </script>
 
 </body>
