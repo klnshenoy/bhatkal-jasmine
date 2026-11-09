@@ -1328,9 +1328,33 @@ async function submitFeedback() {
 
 /* INITIAL LOAD */
 
+/* INITIAL LOAD */
+
 updateProductCarousel();
 
 loadFeedback();
+
+/* AUTOMATIC IMAGE CAROUSEL - CHANGE EVERY 3 SECONDS */
+
+let productCarouselTimer = setInterval(function () {
+    changeProductSlide(1);
+}, 3000);
+
+/* PAUSE WHEN MOUSE IS OVER THE CAROUSEL */
+
+const productCarouselElement = document.querySelector(".product-carousel");
+
+productCarouselElement.addEventListener("mouseenter", function () {
+    clearInterval(productCarouselTimer);
+});
+
+productCarouselElement.addEventListener("mouseleave", function () {
+    clearInterval(productCarouselTimer);
+
+    productCarouselTimer = setInterval(function () {
+        changeProductSlide(1);
+    }, 3000);
+});
 
 </script>
 
