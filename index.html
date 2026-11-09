@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,6 +44,7 @@ content="website">
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
       "@type": "Florist",
       "name": "Bhatkal Mallige Online Store",
@@ -51,12 +53,14 @@ content="website">
       "image": "https://bhatkalmallige.com/assets/images/logo-or-store.jpg",
       "telephone": "+919036477801",
       "priceRange": "₹₹",
+
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Bangalore",
         "addressRegion": "Karnataka",
         "addressCountry": "IN"
       },
+
       "areaServed": [
         "Bangalore",
         "Bengaluru"
@@ -70,6 +74,7 @@ content="website">
       "image": [
         "https://bhatkalmallige.com/assets/images/bhatkal-mallige.jpg"
       ],
+
       "offers": {
         "@type": "Offer",
         "priceCurrency": "INR",
@@ -79,6 +84,7 @@ content="website">
         "url": "https://bhatkalmallige.com/"
       }
     }
+
   ]
 }
 </script>
@@ -558,6 +564,8 @@ h1 {
     font-weight: 600;
 
     color: var(--primary);
+
+    min-height: 22px;
 }
 
 
@@ -881,7 +889,6 @@ footer {
 
             <div class="call-wrapper">
 
-
                 <a
                     href="tel:+919036477801"
                     class="cta cta-call">
@@ -973,7 +980,6 @@ footer {
         <!-- RATING -->
 
         <div class="rating">
-
 
             <input
                 type="radio"
@@ -1088,37 +1094,24 @@ SUPABASE CONFIGURATION
 
 IMPORTANT:
 
-Replace ONLY these two values.
+These are the values currently used for your
+Supabase project.
 
-Your Supabase URL:
+The URL and key MUST be inside quotation marks.
 
-https://YOUR_PROJECT_ID.supabase.co
-
-Your Supabase Publishable Key:
-
-Get it from:
-
-Supabase
-→ Settings
-→ API Keys
-→ Publishable Key
-
-
-DO NOT USE:
-
-Secret key
-Service role key
+DO NOT use a secret/service-role key here.
+Only use the publishable key.
 
 ==================================================
 */
 
 
 const SUPABASE_URL =
-    https://qgwyafwumviecmfgnezi.supabase.co;
+    "https://qgwyafwumviecmfgnezi.supabase.co";
 
 
 const SUPABASE_KEY =
-    sb_publishable_gVN0ViaWxfv2Xyhumy72pA_yXttNXj3;
+    "sb_publishable_gVN0ViaWxfv2Xyhumy72pA_yXttNXj3";
 
 
 /*
@@ -1132,24 +1125,18 @@ let supabaseClient = null;
 
 try {
 
-    if (
-        SUPABASE_URL !==
-        https://qgwyafwumviecmfgnezi.supabase.co
+    supabaseClient =
+        window.supabase.createClient(
+            SUPABASE_URL,
+            SUPABASE_KEY
+        );
 
-        &&
-
-        SUPABASE_KEY !==
-        sb_publishable_gVN0ViaWxfv2Xyhumy72pA_yXttNXj3
-    ) {
-
-        supabaseClient =
-            window.supabase.createClient(
-                SUPABASE_URL,
-                SUPABASE_KEY
-            );
-    }
+    console.log(
+        "Supabase initialized successfully."
+    );
 
 }
+
 catch (error) {
 
     console.error(
@@ -1174,11 +1161,14 @@ async function loadFeedback() {
 
 
     /*
-    If Supabase hasn't been configured yet,
-    simply leave the reviews section empty.
+    Check Supabase
     */
 
     if (!supabaseClient) {
+
+        console.error(
+            "Supabase client not initialized."
+        );
 
         return;
 
@@ -1190,27 +1180,28 @@ async function loadFeedback() {
         const result =
             await supabaseClient
 
-            .from("feedback")
+                .from("feedback")
 
-            .select(
-                "name, message, rating, created_at"
-            )
+                .select(
+                    "name, message, rating, created_at"
+                )
 
-            .eq(
-                "approved",
-                true
-            )
+                .eq(
+                    "approved",
+                    true
+                )
 
-            .order(
-                "created_at",
-                {
-                    ascending: false
-                }
-            );
+                .order(
+                    "created_at",
+                    {
+                        ascending: false
+                    }
+                );
 
 
         const data =
             result.data;
+
 
         const error =
             result.error;
@@ -1231,6 +1222,10 @@ async function loadFeedback() {
         reviewsContainer.innerHTML = "";
 
 
+        /*
+        No approved reviews yet
+        */
+
         if (
             !data ||
             data.length === 0
@@ -1240,6 +1235,10 @@ async function loadFeedback() {
 
         }
 
+
+        /*
+        Display reviews
+        */
 
         data.forEach(function(review) {
 
@@ -1255,8 +1254,7 @@ async function loadFeedback() {
 
 
             const stars =
-                "★".repeat(rating)
-                +
+                "★".repeat(rating) +
                 "☆".repeat(5 - rating);
 
 
@@ -1310,7 +1308,7 @@ async function loadFeedback() {
     catch (error) {
 
         console.error(
-            "Unexpected feedback error:",
+            "Unexpected feedback loading error:",
             error
         );
 
@@ -1329,22 +1327,26 @@ SUBMIT FEEDBACK
 async function submitFeedback() {
 
 
+    /*
+    Get form values
+    */
+
     const name =
         document
-        .getElementById(
-            "customerName"
-        )
-        .value
-        .trim();
+            .getElementById(
+                "customerName"
+            )
+            .value
+            .trim();
 
 
     const message =
         document
-        .getElementById(
-            "customerFeedback"
-        )
-        .value
-        .trim();
+            .getElementById(
+                "customerFeedback"
+            )
+            .value
+            .trim();
 
 
     const ratingElement =
@@ -1359,8 +1361,11 @@ async function submitFeedback() {
         );
 
 
+
     /*
+    ==============================================
     VALIDATE NAME
+    ==============================================
     */
 
     if (
@@ -1375,8 +1380,11 @@ async function submitFeedback() {
     }
 
 
+
     /*
+    ==============================================
     VALIDATE FEEDBACK
+    ==============================================
     */
 
     if (
@@ -1391,57 +1399,81 @@ async function submitFeedback() {
     }
 
 
+
     /*
+    ==============================================
     CHECK SUPABASE
+    ==============================================
     */
 
     if (!supabaseClient) {
 
         status.textContent =
-            "Feedback system is not configured yet.";
+            "Feedback system is not configured.";
+
+        console.error(
+            "Supabase client is not initialized."
+        );
 
         return;
 
     }
 
 
+
     status.textContent =
         "Submitting your feedback...";
 
 
-    try {
 
+    /*
+    ==============================================
+    SEND TO SUPABASE
+    ==============================================
+    */
+
+    try {
 
         const result =
             await supabaseClient
 
-            .from("feedback")
+                .from("feedback")
 
-            .insert({
+                .insert({
 
-                name:
-                    name,
+                    name:
+                        name,
 
-                message:
-                    message,
+                    message:
+                        message,
 
-                rating:
-                    Number(
-                        ratingElement.value
-                    ),
+                    rating:
+                        Number(
+                            ratingElement
+                                ? ratingElement.value
+                                : 5
+                        ),
 
-                approved:
-                    false
+                    approved:
+                        false
 
-            });
+                });
 
 
-        if (result.error) {
+
+        /*
+        Check Supabase error
+        */
+
+        if (
+            result.error
+        ) {
 
             console.error(
                 "Feedback submission error:",
                 result.error
             );
+
 
             status.textContent =
                 "Sorry, something went wrong. Please try again.";
@@ -1451,8 +1483,11 @@ async function submitFeedback() {
         }
 
 
+
         /*
-        CLEAR FORM
+        ==========================================
+        SUCCESS
+        ==========================================
         */
 
         document
@@ -1472,14 +1507,20 @@ async function submitFeedback() {
         status.textContent =
             "Thank you! Your feedback has been submitted and will appear after approval.";
 
+
+        console.log(
+            "Feedback submitted successfully."
+        );
+
     }
 
     catch (error) {
 
         console.error(
-            "Unexpected submission error:",
+            "Unexpected feedback submission error:",
             error
         );
+
 
         status.textContent =
             "Sorry, something went wrong. Please try again.";
@@ -1537,9 +1578,11 @@ START
 
 loadFeedback();
 
+
 </script>
 
 
 </body>
 
 </html>
+```
