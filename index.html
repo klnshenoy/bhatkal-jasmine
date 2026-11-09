@@ -1,2398 +1,1030 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Bhatkal Mallige Order Online | Bridal Jade, Moggin Jade & Phoola Phanthi | Bangalore
-</title>
+<title>Bhatkal Mallige Order Online | Bridal Jade, Moggin Jade & Phoola Phanthi | Bangalore</title>
 
-<meta name="description"
-content="Order authentic Bhatkal Mallige, Bridal Jade, Moggin Jade and Phoola Phanthi online. Fresh traditional jasmine and flower decorations delivered across Bangalore.">
+<meta name="description" content="Order authentic Bhatkal Mallige, Bridal Jade, Moggin Jade and Phoola Phanthi online. Fresh traditional jasmine and flower decorations delivered across Bangalore.">
 
-<meta name="keywords"
-content="Bhatkal Mallige, Bhatkal Jasmine, Bridal Jade, Moggin Jade, Phoola Phanthi, jasmine hair decoration, bridal jasmine Bangalore, Bhatkal Mallige Bangalore, jasmine flowers Bangalore, flower jade Bangalore">
+<meta name="keywords" content="Bhatkal Mallige, Bhatkal Jasmine, Bridal Jade, Moggin Jade, Phoola Phanthi, jasmine hair decoration, bridal jasmine Bangalore">
 
-<meta property="og:title"
-content="Bhatkal Mallige | Bridal Jade, Moggin Jade & Phoola Phanthi">
-
-<meta property="og:description"
-content="Fresh Bhatkal Mallige and traditional bridal jasmine decorations delivered across Bangalore.">
-
-<meta property="og:image"
-content="./bhatkal-jasmine-hero.png.png">
-
-<meta property="og:type"
-content="website">
-
-
-<!-- ==================================================
-     STRUCTURED DATA
-================================================== -->
+<meta property="og:title" content="Bhatkal Mallige | Bridal Jade, Moggin Jade & Phoola Phanthi">
+<meta property="og:description" content="Fresh Bhatkal Mallige and traditional bridal jasmine decorations delivered across Bangalore.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.18.25.jpeg">
 
 <script type="application/ld+json">
-
 {
   "@context": "https://schema.org",
-
-  "@graph": [
-
-    {
-      "@type": "Florist",
-
-      "name": "Bhatkal Mallige Online Store",
-
-      "description":
-      "Fresh Bhatkal Mallige, Bridal Jade, Moggin Jade and Phoola Phanthi delivered across Bangalore.",
-
-      "url":
-      "https://bhatkalmallige.com/",
-
-      "telephone":
-      "+919036477801",
-
-      "priceRange":
-      "₹₹",
-
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bangalore",
-        "addressRegion": "Karnataka",
-        "addressCountry": "IN"
-      },
-
-      "areaServed": [
-        "Bangalore",
-        "Bengaluru"
-      ]
-    }
-
-  ]
+  "@type": "Florist",
+  "name": "Bhatkal Mallige Online Store",
+  "description": "Fresh Bhatkal Mallige, Bridal Jade, Moggin Jade and Phoola Phanthi delivered across Bangalore.",
+  "url": "https://bhatkalmallige.com/",
+  "telephone": "+919036477801",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangalore",
+    "addressRegion": "Karnataka",
+    "addressCountry": "IN"
+  },
+  "areaServed": ["Bangalore", "Bengaluru"]
 }
-
 </script>
 
-
 <style>
-
-/* ==================================================
-   GLOBAL
-================================================== */
-
 :root {
-    --primary: #23311d;
-    --accent: #8b6d3a;
-    --light: #faf8f3;
-    --gold: #b27b00;
+  --primary: #23311d;
+  --accent: #8b6d3a;
+  --light: #faf8f3;
+  --gold: #b27b00;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-
-    font-family:
-        'Segoe UI',
-        Arial,
-        sans-serif;
-
-    background:
-        var(--light);
-
-    color:
-        #333;
-
-    overflow-x:
-        hidden;
-
-    min-height:
-        100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--light);
+  color: #333;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-
-/* ==================================================
-   HERO
-================================================== */
-
 .container {
-
-    min-height:
-        90vh;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    gap:
-        4rem;
-
-    padding:
-        5vw;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5vw;
 }
 
 .left {
-
-    flex: 1;
-
-    min-width:
-        320px;
-
-    animation:
-        fadeInLeft 1s ease-out;
-
+  flex: 1;
+  min-width: 320px;
 }
 
 .brand {
-
-    color:
-        var(--accent);
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        4px;
-
-    font-size:
-        clamp(
-            .9rem,
-            1vw,
-            1.2rem
-        );
-
-    margin-bottom:
-        20px;
-
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: clamp(.9rem, 1vw, 1.2rem);
+  margin-bottom: 20px;
 }
 
 h1 {
-
-    color:
-        var(--primary);
-
-    line-height:
-        1.1;
-
-    font-weight:
-        700;
-
-    font-size:
-        clamp(
-            2.5rem,
-            5.5vw,
-            4.8rem
-        );
-
-    margin-bottom:
-        25px;
-
+  color: var(--primary);
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5.5vw, 4.8rem);
+  margin-bottom: 25px;
 }
 
 .tagline {
-
-    color:
-        var(--accent);
-
-    font-size:
-        clamp(
-            1.1rem,
-            2vw,
-            1.7rem
-        );
-
-    margin-bottom:
-        25px;
-
-    font-weight:
-        500;
-
+  color: var(--accent);
+  font-size: clamp(1.1rem, 2vw, 1.7rem);
+  margin-bottom: 25px;
+  font-weight: 500;
 }
 
 .description {
-
-    color:
-        #555;
-
-    line-height:
-        1.8;
-
-    font-size:
-        clamp(
-            1rem,
-            1.2vw,
-            1.25rem
-        );
-
-    max-width:
-        650px;
-
-    margin-bottom:
-        40px;
-
+  color: #555;
+  line-height: 1.8;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  max-width: 650px;
+  margin-bottom: 35px;
 }
 
 .description h2 {
-
-    font-size:
-        1.3rem;
-
-    color:
-        var(--primary);
-
-    margin-bottom:
-        10px;
-
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 10px;
 }
 
-
-/* ==================================================
-   BUTTONS
-================================================== */
-
 .cta-group {
-
-    display:
-        flex;
-
-    gap:
-        15px;
-
-    flex-wrap:
-        wrap;
-
-    align-items:
-        center;
-
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .cta {
-
-    display:
-        inline-block;
-
-    text-decoration:
-        none;
-
-    border:
-        none;
-
-    background:
-        var(--primary);
-
-    color:
-        white;
-
-    padding:
-        17px 34px;
-
-    border-radius:
-        60px;
-
-    font-size:
-        1rem;
-
-    font-weight:
-        600;
-
-    cursor:
-        pointer;
-
-    transition:
-        all .3s ease;
-
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 17px 34px;
+  border-radius: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
 }
 
 .cta:hover {
-
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 12px 30px
-        rgba(0,0,0,.18);
-
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
 }
 
 .cta-call {
-
-    background:
-        transparent;
-
-    color:
-        var(--primary);
-
-    border:
-        2px solid var(--primary);
-
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 .cta-call:hover {
-
-    background:
-        var(--primary);
-
-    color:
-        white;
-
+  background: var(--primary);
+  color: white;
 }
 
-
-/* ==================================================
-   CALL HOVER CONTACT
-================================================== */
-
 .call-wrapper {
-
-    position:
-        relative;
-
-    display:
-        inline-block;
-
+  position: relative;
+  display: inline-block;
 }
 
 .contact-hover {
-
-    position:
-        absolute;
-
-    left:
-        50%;
-
-    bottom:
-        calc(100% + 12px);
-
-    transform:
-        translateX(-50%)
-        translateY(10px);
-
-    width:
-        270px;
-
-    background:
-        white;
-
-    border-radius:
-        16px;
-
-    padding:
-        20px;
-
-    box-shadow:
-        0 15px 40px
-        rgba(0,0,0,.18);
-
-    text-align:
-        center;
-
-    opacity:
-        0;
-
-    visibility:
-        hidden;
-
-    transition:
-        all .25s ease;
-
-    z-index:
-        100;
-
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  transform: translateX(-50%) translateY(10px);
+  width: 270px;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.18);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .25s ease;
+  z-index: 100;
 }
 
-.call-wrapper:hover .contact-hover {
-
-    opacity:
-        1;
-
-    visibility:
-        visible;
-
-    transform:
-        translateX(-50%)
-        translateY(0);
-
+.call-wrapper:hover .contact-hover,
+.call-wrapper:focus-within .contact-hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 .contact-hover-title {
-
-    font-weight:
-        700;
-
-    color:
-        var(--primary);
-
-    margin-bottom:
-        8px;
-
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
 }
 
 .contact-number {
-
-    color:
-        var(--accent);
-
-    font-size:
-        1.15rem;
-
-    font-weight:
-        700;
-
+  color: var(--accent);
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .contact-info {
-
-    font-size:
-        .8rem;
-
-    color:
-        #777;
-
-    margin-top:
-        5px;
-
+  font-size: .8rem;
+  color: #777;
+  margin-top: 5px;
 }
 
-
-/* ==================================================
-   HERO IMAGE
-================================================== */
-
-.right {
-
-    flex:
-        1;
-
-    min-width:
-        320px;
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-    align-items:
-        center;
-
-}
-
-.image-card {
-
-    width:
-        100%;
-
-    max-width:
-        750px;
-
-    border-radius:
-        30px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        0 25px 70px
-        rgba(0,0,0,.18);
-
-}
-
-.image-card img {
-
-    width:
-        100%;
-
-    height:
-        auto;
-
-    display:
-        block;
-
-    transition:
-        transform .6s ease;
-
-}
-
-.image-card:hover img {
-
-    transform:
-        scale(1.04);
-
-}
-
-
-/* ==================================================
-   PRODUCT SECTION
-================================================== */
+/* PRODUCT GALLERY */
 
 .products-section {
-
-    max-width:
-        1200px;
-
-    margin:
-        30px auto 70px;
-
-    padding:
-        30px 25px;
-
+  max-width: 1250px;
+  margin: 30px auto 70px;
+  padding: 30px 25px;
 }
 
 .section-heading {
-
-    text-align:
-        center;
-
-    margin-bottom:
-        40px;
-
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .section-heading h2 {
-
-    color:
-        var(--primary);
-
-    font-size:
-        clamp(
-            2rem,
-            4vw,
-            3rem
-        );
-
-    margin-bottom:
-        10px;
-
+  color: var(--primary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 10px;
 }
 
 .section-heading p {
-
-    color:
-        #666;
-
-    max-width:
-        700px;
-
-    margin:
-        auto;
-
-    line-height:
-        1.7;
-
+  color: #666;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
 }
-
-
-/* ==================================================
-   PRODUCT GRID
-================================================== */
 
 .products-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(
-            auto-fit,
-            minmax(
-                280px,
-                1fr
-            )
-        );
-
-    gap:
-        30px;
-
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
 }
-
-
-/* ==================================================
-   PRODUCT CARD
-================================================== */
 
 .product-card {
-
-    background:
-        white;
-
-    border-radius:
-        22px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        0 12px 35px
-        rgba(0,0,0,.09);
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
-
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,.09);
 }
-
-.product-card:hover {
-
-    transform:
-        translateY(-8px);
-
-    box-shadow:
-        0 20px 45px
-        rgba(0,0,0,.15);
-
-}
-
-
-/* ==================================================
-   PRODUCT IMAGE
-================================================== */
 
 .product-image {
-
-    width:
-        100%;
-
-    height:
-        420px;
-
-    overflow:
-        hidden;
-
-    background:
-        #f3eee5;
-
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background: #f3eee5;
+  cursor: zoom-in;
 }
 
 .product-image img {
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        cover;
-
-    display:
-        block;
-
-    transition:
-        transform .5s ease;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
 }
 
-.product-card:hover
-.product-image img {
-
-    transform:
-        scale(1.04);
-
+.product-card:hover .product-image img {
+  transform: scale(1.04);
 }
-
-
-/* ==================================================
-   PRODUCT CONTENT
-================================================== */
 
 .product-content {
-
-    padding:
-        25px;
-
-    text-align:
-        center;
-
+  padding: 20px;
+  text-align: center;
 }
 
 .product-content h3 {
-
-    color:
-        var(--primary);
-
-    font-size:
-        1.5rem;
-
-    margin-bottom:
-        10px;
-
+  color: var(--primary);
+  font-size: 1.35rem;
+  margin-bottom: 10px;
 }
 
 .product-content p {
-
-    color:
-        #666;
-
-    line-height:
-        1.6;
-
-    font-size:
-        .95rem;
-
-    margin-bottom:
-        20px;
-
+  color: #666;
+  line-height: 1.6;
+  font-size: .95rem;
+  margin-bottom: 18px;
 }
 
 .product-button {
-
-    display:
-        inline-block;
-
-    background:
-        var(--primary);
-
-    color:
-        white;
-
-    text-decoration:
-        none;
-
-    padding:
-        13px 25px;
-
-    border-radius:
-        40px;
-
-    font-weight:
-        600;
-
-    transition:
-        all .25s ease;
-
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all .25s ease;
 }
 
 .product-button:hover {
-
-    background:
-        var(--accent);
-
-    transform:
-        translateY(-2px);
-
+  background: var(--accent);
+  transform: translateY(-2px);
 }
-
-
-/* ==================================================
-   SMALL PRODUCT NOTE
-================================================== */
 
 .product-note {
-
-    margin-top:
-        12px;
-
-    font-size:
-        .75rem;
-
-    color:
-        #999;
-
+  margin-top: 12px;
+  font-size: .75rem;
+  color: #999;
 }
 
+/* IMAGE POPUP */
 
-/* ==================================================
-   FEEDBACK SECTION
-================================================== */
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.92);
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.image-modal.active {
+  display: flex;
+}
+
+.modal-image {
+  display: block;
+  max-width: 95vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 10px 50px rgba(0,0,0,.5);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: white;
+  font-size: 42px;
+  font-weight: 300;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 10001;
+}
+
+/* FEEDBACK */
 
 .feedback-section {
-
-    width:
-        100%;
-
-    max-width:
-        1200px;
-
-    margin:
-        40px auto 60px;
-
-    padding:
-        40px 25px;
-
-    text-align:
-        center;
-
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 60px;
+  padding: 40px 25px;
+  text-align: center;
 }
 
 .feedback-section h2 {
-
-    color:
-        var(--primary);
-
-    font-size:
-        2.2rem;
-
-    margin-bottom:
-        10px;
-
+  color: var(--primary);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
 .feedback-subtitle {
-
-    color:
-        #666;
-
-    margin-bottom:
-        35px;
-
+  color: #666;
+  margin-bottom: 35px;
 }
 
-
-/* ==================================================
-   FEEDBACK FORM
-================================================== */
-
 .feedback-form {
-
-    max-width:
-        600px;
-
-    margin:
-        0 auto 55px;
-
-    padding:
-        30px;
-
-    background:
-        white;
-
-    border-radius:
-        20px;
-
-    box-shadow:
-        0 10px 35px
-        rgba(0,0,0,.08);
-
+  max-width: 600px;
+  margin: 0 auto 55px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.08);
 }
 
 .feedback-form input,
 .feedback-form textarea {
-
-    width:
-        100%;
-
-    padding:
-        14px;
-
-    margin-bottom:
-        15px;
-
-    border:
-        1px solid #ddd;
-
-    border-radius:
-        10px;
-
-    font-family:
-        inherit;
-
-    font-size:
-        1rem;
-
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-
-    outline:
-        none;
-
-    border-color:
-        var(--accent);
-
+  outline: none;
+  border-color: var(--accent);
 }
 
 .feedback-form textarea {
-
-    min-height:
-        120px;
-
-    resize:
-        vertical;
-
+  min-height: 120px;
+  resize: vertical;
 }
 
-
-/* ==================================================
-   STAR RATING
-================================================== */
-
 .rating {
-
-    display:
-        flex;
-
-    flex-direction:
-        row-reverse;
-
-    justify-content:
-        center;
-
-    gap:
-        4px;
-
-    margin:
-        10px 0 20px;
-
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 4px;
+  margin: 10px 0 20px;
 }
 
 .rating input {
-
-    display:
-        none;
-
+  display: none;
 }
 
 .rating label {
-
-    font-size:
-        2rem;
-
-    color:
-        #ccc;
-
-    cursor:
-        pointer;
-
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
 }
 
 .rating label:hover,
-.rating label:hover ~ label {
-
-    color:
-        #d4a017;
-
-}
-
+.rating label:hover ~ label,
 .rating input:checked ~ label {
-
-    color:
-        #d4a017;
-
+  color: #d4a017;
 }
-
-
-/* ==================================================
-   FEEDBACK MESSAGE
-================================================== */
 
 .feedback-message {
-
-    margin-top:
-        15px;
-
-    min-height:
-        24px;
-
-    font-weight:
-        600;
-
-    color:
-        var(--primary);
-
+  margin-top: 15px;
+  min-height: 24px;
+  font-weight: 600;
+  color: var(--primary);
 }
-
-
-/* ==================================================
-   POST-IT REVIEWS
-================================================== */
 
 .reviews {
-
-    max-width:
-        1100px;
-
-    margin:
-        35px auto 50px;
-
-    padding:
-        20px;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(
-            auto-fit,
-            minmax(
-                300px,
-                380px
-            )
-        );
-
-    justify-content:
-        center;
-
-    align-items:
-        start;
-
-    gap:
-        45px 35px;
-
+  max-width: 1100px;
+  margin: 35px auto 50px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-content: center;
+  align-items: start;
+  gap: 40px 30px;
 }
-
-
-/* ==================================================
-   POST-IT
-================================================== */
 
 .review-card {
-
-    position:
-        relative;
-
-    width:
-        100%;
-
-    height:
-        auto;
-
-    padding:
-        32px 25px 23px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #fff8c9 0%,
-            #ffe98a 100%
-        );
-
-    border:
-        1px solid
-        rgba(
-            150,
-            120,
-            40,
-            .28
-        );
-
-    border-radius:
-        4px;
-
-    box-shadow:
-
-        3px 5px 0
-        rgba(
-            150,
-            120,
-            40,
-            .12
-        ),
-
-        0 12px 25px
-        rgba(
-            0,
-            0,
-            0,
-            .14
-        );
-
-    text-align:
-        left;
-
-    transform:
-        rotate(-1.5deg);
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
-
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  padding: 32px 25px 23px;
+  background: linear-gradient(135deg, #fff8c9 0%, #ffe98a 100%);
+  border: 1px solid rgba(150,120,40,.28);
+  border-radius: 4px;
+  box-shadow: 3px 5px 0 rgba(150,120,40,.12),
+              0 12px 25px rgba(0,0,0,.14);
+  text-align: left;
+  transform: rotate(-1deg);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.review-card:nth-child(2) {
-    transform:
-        rotate(1.5deg);
-}
-
-.review-card:nth-child(3) {
-    transform:
-        rotate(-1deg);
-}
-
-.review-card:nth-child(4) {
-    transform:
-        rotate(1.2deg);
+.review-card:nth-child(even) {
+  transform: rotate(1deg);
 }
 
 .review-card:hover {
-
-    transform:
-        rotate(0deg)
-        translateY(-6px);
-
-    box-shadow:
-        5px 15px 28px
-        rgba(0,0,0,.18);
-
-    z-index:
-        5;
-
+  transform: rotate(0deg) translateY(-6px);
+  box-shadow: 5px 15px 28px rgba(0,0,0,.18);
+  z-index: 5;
 }
-
-
-/* ==================================================
-   PIN
-================================================== */
 
 .review-card::before {
-
-    content:
-        "📌";
-
-    position:
-        absolute;
-
-    top:
-        -17px;
-
-    left:
-        50%;
-
-    transform:
-        translateX(-50%)
-        rotate(-8deg);
-
-    font-size:
-        29px;
-
-    z-index:
-        3;
-
+  content: "📌";
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-8deg);
+  font-size: 29px;
 }
 
-
-/* ==================================================
-   REVIEW CONTENT
-================================================== */
-
 .review-stars {
-
-    color:
-        #b27b00;
-
-    font-size:
-        1.05rem;
-
-    letter-spacing:
-        2px;
-
-    margin-bottom:
-        10px;
-
+  color: #b27b00;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 .review-text {
-
-    color:
-        #4d4025;
-
-    font-family:
-        "Comic Sans MS",
-        "Segoe Print",
-        cursive;
-
-    font-size:
-        .95rem;
-
-    line-height:
-        1.5;
-
-    margin-bottom:
-        14px;
-
-    font-style:
-        italic;
-
-    overflow-wrap:
-        anywhere;
-
+  color: #4d4025;
+  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-size: .95rem;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  font-style: italic;
+  overflow-wrap: anywhere;
 }
 
 .review-name {
-
-    color:
-        #3c321e;
-
-    font-family:
-        "Comic Sans MS",
-        "Segoe Print",
-        cursive;
-
-    font-size:
-        .95rem;
-
-    font-weight:
-        700;
-
+  color: #3c321e;
+  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-size: .95rem;
+  font-weight: 700;
 }
 
 .review-date {
-
-    color:
-        #75643c;
-
-    font-family:
-        "Segoe Print",
-        cursive;
-
-    font-size:
-        .7rem;
-
-    margin-top:
-        5px;
-
+  color: #75643c;
+  font-family: "Segoe Print", cursive;
+  font-size: .7rem;
+  margin-top: 5px;
 }
-
-
-/* ==================================================
-   FOOTER
-================================================== */
 
 footer {
-
-    text-align:
-        center;
-
-    padding:
-        20px;
-
-    font-size:
-        .75rem;
-
-    color:
-        #888;
-
-    letter-spacing:
-        1px;
-
+  text-align: center;
+  padding: 20px;
+  font-size: .75rem;
+  color: #888;
+  letter-spacing: 1px;
 }
 
-
-/* ==================================================
-   MOBILE
-================================================== */
+/* MOBILE */
 
 @media (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
 
-    .container {
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        flex-direction:
-            column-reverse;
+  .cta-group {
+    justify-content: center;
+  }
 
-        text-align:
-            center;
+  .cta {
+    width: 100%;
+    max-width: 350px;
+  }
 
-        gap:
-            2rem;
-
-        padding:
-            1.5rem;
-
-    }
-
-    .description {
-
-        margin-left:
-            auto;
-
-        margin-right:
-            auto;
-
-    }
-
-    .cta-group {
-
-        justify-content:
-            center;
-
-    }
-
-    .cta {
-
-        width:
-            100%;
-
-        max-width:
-            350px;
-
-    }
-
-    .image-card {
-
-        max-width:
-            700px;
-
-        border-radius:
-            20px;
-
-    }
-
-    .contact-hover {
-
-        display:
-            none;
-
-    }
-
+  .contact-hover {
+    display: none;
+  }
 }
-
-
-/* ==================================================
-   MOBILE PRODUCTS
-================================================== */
 
 @media (max-width: 600px) {
+  .products-section {
+    padding: 25px 15px;
+  }
 
-    .products-section {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
 
-        padding:
-            30px 15px;
+  .product-image {
+    height: 390px;
+  }
 
-    }
+  .product-content {
+    padding: 18px;
+  }
 
-    .products-grid {
+  .feedback-section {
+    padding: 35px 15px;
+  }
 
-        grid-template-columns:
-            1fr;
+  .feedback-form {
+    padding: 20px;
+  }
 
-    }
+  .reviews {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 420px;
+    padding: 15px;
+    gap: 35px;
+  }
 
-    .product-image {
+  .image-modal {
+    padding: 12px;
+  }
 
-        height:
-            430px;
+  .modal-image {
+    max-width: 96vw;
+    max-height: 85vh;
+  }
 
-    }
-
-    .product-content {
-
-        padding:
-            22px;
-
-    }
-
-    .feedback-section {
-
-        padding:
-            35px 15px;
-
-    }
-
-    .feedback-form {
-
-        padding:
-            20px;
-
-    }
-
-    .reviews {
-
-        grid-template-columns:
-            minmax(
-                0,
-                1fr
-            );
-
-        max-width:
-            420px;
-
-        padding:
-            15px;
-
-        gap:
-            40px;
-
-    }
-
-    .review-card {
-
-        width:
-            100%;
-
-        padding:
-            32px 22px 23px;
-
-    }
-
+  .modal-close {
+    top: 12px;
+    right: 15px;
+  }
 }
-
-
-/* ==================================================
-   ANIMATIONS
-================================================== */
-
-@keyframes fadeInLeft {
-
-    from {
-
-        opacity:
-            0;
-
-        transform:
-            translateX(-60px);
-
-    }
-
-    to {
-
-        opacity:
-            1;
-
-        transform:
-            translateX(0);
-
-    }
-
-}
-
-@keyframes fadeInRight {
-
-    from {
-
-        opacity:
-            0;
-
-        transform:
-            translateX(60px);
-
-    }
-
-    to {
-
-        opacity:
-            1;
-
-        transform:
-            translateX(0);
-
-    }
-
-}
-
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- ==================================================
-     MAIN BHATKAL MALLIGE SECTION
-================================================== -->
+<!-- MAIN SECTION -->
 
 <div class="container">
 
+  <div class="left">
 
-    <div class="left">
+    <div class="brand">BHATKAL MALLIGE (JASMINE)</div>
 
+    <h1>Order Authentic Bhatkal Mallige Online</h1>
 
-        <div class="brand">
-            BHATKAL MALLIGE (JASMINE)
-        </div>
-
-
-        <h1>
-            Order Authentic Bhatkal Mallige Online
-        </h1>
-
-
-        <div class="tagline">
-
-            Sourced directly from Bhatkal,
-            delivered fresh to your doorstep
-            across Bangalore (Bengaluru)
-
-        </div>
-
-
-        <div class="description">
-
-            <h2>
-                Fresh Bhatkal Mallige Delivery in Bangalore
-            </h2>
-
-            <p>
-
-                Experience the unmatched fragrance
-                and freshness of premium
-
-                <strong>
-                    Bhatkal Mallige (ಭಟ್ಕಳ ಮಲ್ಲಿಗೆ)
-                </strong>
-
-                , sourced directly from Bhatkal and
-
-                <strong>
-                    delivered fresh daily across Bangalore
-                </strong>
-
-                .
-
-                Perfect for weddings, pujas,
-                festivals, and special occasions.
-
-            </p>
-
-            <br>
-
-            <strong>
-                Doorstep delivery in Bangalore |
-                Minimum order 2 atte
-            </strong>
-
-        </div>
-
-
-        <!-- BUTTONS -->
-
-        <div class="cta-group">
-
-
-            <a
-                href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)"
-                class="cta"
-                target="_blank">
-
-                💬 Order on WhatsApp
-
-            </a>
-
-
-            <div class="call-wrapper">
-
-                <a
-                    href="tel:+919036477801"
-                    class="cta cta-call">
-
-                    📞 Call Us
-
-                </a>
-
-
-                <div class="contact-hover">
-
-                    <div class="contact-hover-title">
-                        Contact Bhatkal Mallige
-                    </div>
-
-                    <div class="contact-number">
-                        +91 90364 77801
-                    </div>
-
-                    <div class="contact-info">
-                        Click to call us
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
+    <div class="tagline">
+      Sourced directly from Bhatkal, delivered fresh to your doorstep across Bangalore (Bengaluru)
     </div>
 
+    <div class="description">
+      <h2>Fresh Bhatkal Mallige Delivery in Bangalore</h2>
 
+      <p>
+        Experience the unmatched fragrance and freshness of premium
+        <strong>Bhatkal Mallige (ಭಟ್ಕಳ ಮಲ್ಲಿಗೆ)</strong>, sourced directly
+        from Bhatkal and <strong>delivered fresh daily across Bangalore</strong>.
+        Perfect for weddings, pujas, festivals, and special occasions.
+      </p>
 
-    <!-- HERO IMAGE -->
+      <br>
 
-    <div class="right">
+      <strong>Doorstep delivery in Bangalore | Minimum order 2 atte</strong>
+    </div>
 
-        <div class="image-card">
+    <div class="cta-group">
 
-            <img
-                src="./bhatkal-jasmine-hero.png.png"
-                alt="Fresh Bhatkal Mallige jasmine flowers delivered in Bangalore">
+      <a
+        href="https://wa.me/919036477801?text=Hi%20I%20want%20to%20order%20Bhatkal%20Jasmine%20(Mallige)"
+        class="cta"
+        target="_blank"
+        rel="noopener">
+        💬 Order on WhatsApp
+      </a>
 
+      <div class="call-wrapper">
+
+        <a href="tel:+919036477801" class="cta cta-call">
+          📞 Call Us
+        </a>
+
+        <div class="contact-hover">
+          <div class="contact-hover-title">Contact Bhatkal Mallige</div>
+          <div class="contact-number">+91 90364 77801</div>
+          <div class="contact-info">Click to call us</div>
         </div>
 
+      </div>
     </div>
+  </div>
+
+  <div class="right">
+    <div class="image-card">
+      <img
+        src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.18.25.jpeg"
+        alt="Bhatkal Mallige jasmine flowers">
+    </div>
+  </div>
 
 </div>
 
-
-
-<!-- ==================================================
-     ADDITIONAL PRODUCTS
-================================================== -->
+<!-- PRODUCTS: ONLY THE FOUR FINAL IMAGES -->
 
 <section class="products-section">
 
+  <div class="section-heading">
+    <h2>Bridal & Traditional Flower Decorations</h2>
+    <p>
+      Beautiful traditional jasmine and flower decorations for weddings,
+      bridal occasions, festivals and special celebrations.
+      Click any image to view it in full size.
+    </p>
+  </div>
 
-    <div class="section-heading">
+  <div class="products-grid">
 
-        <h2>
-            Bridal & Traditional Flower Decorations
-        </h2>
-
-        <p>
-
-            Beautiful traditional jasmine and flower
-            decorations for weddings, bridal occasions,
-            festivals and special celebrations.
-
-        </p>
-
+    <div class="product-card">
+      <div class="product-image" onclick="openImage(this)">
+        <img
+          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.18.25%20%281%29.jpeg"
+          alt="Bridal and traditional flower decoration"
+          loading="lazy">
+      </div>
+      <div class="product-content">
+        <h3>Bridal Jade</h3>
+        <p>Elegant traditional floral hair decoration for bridal and special occasions.</p>
+        <a class="product-button"
+           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Bridal%20Jade"
+           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+        <div class="product-note">Custom designs available</div>
+      </div>
     </div>
 
-
-
-    <div class="products-grid">
-
-
-        <!-- ==================================================
-             BRIDAL JADE
-        ================================================== -->
-
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img
-                   src="./WhatsApp Image 2026-11-09 at 19.18.25 (1).jpeg"
-                    alt="Bridal Jade traditional jasmine flower decoration">
-
-            </div>
-
-
-            <div class="product-content">
-
-                <h3>
-                    Bridal Jade
-                </h3>
-
-                <p>
-
-                    Elegant traditional floral hair
-                    decoration designed for bridal
-                    and special occasions.
-
-                </p>
-
-
-                <a
-                    href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Bridal%20Jade"
-                    class="product-button"
-                    target="_blank">
-
-                    💬 Enquire on WhatsApp
-
-                </a>
-
-
-                <div class="product-note">
-                    Custom designs available
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ==================================================
-             MOGGIN JADE
-        ================================================== -->
-
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img
-                    src="./WhatsApp Image 2026-11-09 at 19.18.25.jpeg"
-                    alt="Moggin Jade traditional jasmine flower decoration">
-
-            </div>
-
-
-            <div class="product-content">
-
-                <h3>
-                    Moggin Jade
-                </h3>
-
-                <p>
-
-                    Beautiful traditional jasmine
-                    decoration crafted for weddings,
-                    bridal wear and festive occasions.
-
-                </p>
-
-
-                <a
-                    href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Moggin%20Jade"
-                    class="product-button"
-                    target="_blank">
-
-                    💬 Enquire on WhatsApp
-
-                </a>
-
-
-                <div class="product-note">
-                    Freshly prepared to order
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- ==================================================
-             PHOOLA PHANTHI
-        ================================================== -->
-
-        <div class="product-card">
-
-            <div class="product-image">
-
-                <img
-                   src="./WhatsApp Image 2026-11-09 at 19.07.34.jpeg"
-                   alt="Phoola Phanthi traditional flower decoration">
-
-            </div>
-
-
-            <div class="product-content">
-
-                <h3>
-                    Phoola Phanthi
-                </h3>
-
-                <p>
-
-                    Traditional floral decoration
-                    suitable for bridal hairstyles,
-                    weddings and special occasions.
-
-                </p>
-
-
-                <a
-                    href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Phoola%20Phanthi"
-                    class="product-button"
-                    target="_blank">
-
-                    💬 Enquire on WhatsApp
-
-                </a>
-
-
-                <div class="product-note">
-                    Custom arrangements available
-                </div>
-
-            </div>
-
-        </div>
-
-
+    <div class="product-card">
+      <div class="product-image" onclick="openImage(this)">
+        <img
+          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.18.25.jpeg"
+          alt="Moggin Jade flower decoration"
+          loading="lazy">
+      </div>
+      <div class="product-content">
+        <h3>Moggin Jade</h3>
+        <p>Beautiful traditional jasmine decoration for weddings and festive occasions.</p>
+        <a class="product-button"
+           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Moggin%20Jade"
+           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+        <div class="product-note">Freshly prepared to order</div>
+      </div>
     </div>
 
+    <div class="product-card">
+      <div class="product-image" onclick="openImage(this)">
+        <img
+          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.26.09.jpeg"
+          alt="Traditional Phoola Phanthi flower decoration"
+          loading="lazy">
+      </div>
+      <div class="product-content">
+        <h3>Phoola Phanthi</h3>
+        <p>Traditional floral decoration suitable for bridal hairstyles, weddings and special occasions.</p>
+        <a class="product-button"
+           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20Phoola%20Phanthi"
+           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+        <div class="product-note">Custom arrangements available</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" onclick="openImage(this)">
+        <img
+          src="https://github.com/klnshenoy/bhatkal-jasmine/raw/refs/heads/main/WhatsApp%20Image%202026-11-09%20at%2019.28.55.jpeg"
+          alt="Traditional bridal flower decoration"
+          loading="lazy">
+      </div>
+      <div class="product-content">
+        <h3>Traditional Flower Decoration</h3>
+        <p>Explore another traditional flower design. Contact us for availability and custom orders.</p>
+        <a class="product-button"
+           href="https://wa.me/919036477801?text=Hi%2C%20I%20am%20interested%20in%20your%20traditional%20flower%20decoration"
+           target="_blank" rel="noopener">💬 Enquire on WhatsApp</a>
+        <div class="product-note">Contact us for details</div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<!-- IMAGE POPUP -->
 
+<div
+  class="image-modal"
+  id="imageModal"
+  onclick="closeImage()"
+  aria-hidden="true">
 
-<!-- ==================================================
-     CUSTOMER REVIEWS
-================================================== -->
+  <button
+    class="modal-close"
+    type="button"
+    aria-label="Close image"
+    onclick="event.stopPropagation(); closeImage();">
+    &times;
+  </button>
+
+  <img
+    id="modalImage"
+    class="modal-image"
+    src=""
+    alt="Full-size product image"
+    onclick="event.stopPropagation();">
+
+</div>
+
+<!-- CUSTOMER REVIEWS -->
 
 <section class="feedback-section">
 
+  <h2>What Our Customers Say</h2>
 
-    <h2>
-        What Our Customers Say
-    </h2>
+  <p class="feedback-subtitle">
+    Loved our Bhatkal Mallige? Share your experience with us.
+  </p>
 
+  <div class="feedback-form">
 
-    <p class="feedback-subtitle">
+    <input
+      type="text"
+      id="customerName"
+      placeholder="Your Name"
+      maxlength="50"
+      autocomplete="name">
 
-        Loved our Bhatkal Mallige?
-        Share your experience with us.
+    <textarea
+      id="customerFeedback"
+      placeholder="Tell us about your experience..."
+      maxlength="500"></textarea>
 
-    </p>
+    <div class="rating">
 
+      <input type="radio" name="rating" id="star5" value="5" checked>
+      <label for="star5">★</label>
 
+      <input type="radio" name="rating" id="star4" value="4">
+      <label for="star4">★</label>
 
-    <!-- FEEDBACK FORM -->
+      <input type="radio" name="rating" id="star3" value="3">
+      <label for="star3">★</label>
 
-    <div class="feedback-form">
+      <input type="radio" name="rating" id="star2" value="2">
+      <label for="star2">★</label>
 
-
-        <input
-            type="text"
-            id="customerName"
-            placeholder="Your Name"
-            maxlength="50"
-            autocomplete="name">
-
-
-        <textarea
-            id="customerFeedback"
-            placeholder="Tell us about your experience..."
-            maxlength="500"></textarea>
-
-
-        <!-- STAR RATING -->
-
-        <div class="rating">
-
-
-            <input
-                type="radio"
-                name="rating"
-                id="star5"
-                value="5"
-                checked>
-
-            <label for="star5">
-                ★
-            </label>
-
-
-            <input
-                type="radio"
-                name="rating"
-                id="star4"
-                value="4">
-
-            <label for="star4">
-                ★
-            </label>
-
-
-            <input
-                type="radio"
-                name="rating"
-                id="star3"
-                value="3">
-
-            <label for="star3">
-                ★
-            </label>
-
-
-            <input
-                type="radio"
-                name="rating"
-                id="star2"
-                value="2">
-
-            <label for="star2">
-                ★
-            </label>
-
-
-            <input
-                type="radio"
-                name="rating"
-                id="star1"
-                value="1">
-
-            <label for="star1">
-                ★
-            </label>
-
-
-        </div>
-
-
-
-        <button
-            type="button"
-            class="cta"
-            onclick="submitFeedback()">
-
-            Submit Feedback
-
-        </button>
-
-
-        <div
-            id="feedbackMessage"
-            class="feedback-message">
-        </div>
-
+      <input type="radio" name="rating" id="star1" value="1">
+      <label for="star1">★</label>
 
     </div>
 
+    <button type="button" class="cta" id="submitFeedbackButton" onclick="submitFeedback()">
+      Submit Feedback
+    </button>
 
+    <div id="feedbackMessage" class="feedback-message" role="status"></div>
 
-    <!-- APPROVED REVIEWS -->
+  </div>
 
-    <div
-        id="reviews"
-        class="reviews">
-    </div>
-
+  <div id="reviews" class="reviews"></div>
 
 </section>
 
-
-
-<!-- ==================================================
-     FOOTER
-================================================== -->
-
 <footer>
-
-    Bhatkal Mallige |
-    Bridal Jade |
-    Moggin Jade |
-    Phoola Phanthi |
-    Bangalore
-
+  Bhatkal Mallige | Bridal Jade | Moggin Jade | Phoola Phanthi | Bangalore
 </footer>
 
-
-
-<!-- ==================================================
-     SUPABASE
-================================================== -->
+<!-- SUPABASE -->
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-
 <script>
+/* SUPABASE CONFIGURATION */
 
-/* ==================================================
-   SUPABASE CONFIGURATION
-================================================== */
-
-const SUPABASE_URL =
-    "https://qgwyafwumviecmfgnezi.supabase.co";
-
-
-const SUPABASE_KEY =
-    "sb_publishable_gVN0ViaWxfv2Xyhumy72pA_yXttNXj3";
-
+const SUPABASE_URL = "https://qgwyafwumviecmfgnezi.supabase.co";
+const SUPABASE_KEY = "sb_publishable_gVN0ViaWxfv2Xyhumy72pA_yXttNXj3";
 
 let supabaseClient = null;
 
-
 try {
-
-    supabaseClient =
-        window.supabase.createClient(
-            SUPABASE_URL,
-            SUPABASE_KEY
-        );
-
-    console.log(
-        "Supabase initialized successfully."
-    );
-
+  supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+  console.log("Supabase initialized successfully.");
+} catch (error) {
+  console.error("Supabase initialization error:", error);
 }
 
-catch (error) {
+/* IMAGE POPUP */
 
-    console.error(
-        "Supabase initialization error:",
-        error
-    );
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
 
+let modalHistoryOpen = false;
+
+function openImage(imageContainer) {
+  const image = imageContainer.querySelector("img");
+
+  if (!image) return;
+
+  modalImage.src = image.src;
+  modalImage.alt = image.alt;
+
+  imageModal.classList.add("active");
+  imageModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+
+  // Add a browser history entry so mobile Back closes the popup.
+  if (!modalHistoryOpen) {
+    history.pushState({ imagePopup: true }, "");
+    modalHistoryOpen = true;
+  }
 }
 
+function closeImage(fromBackButton = false) {
+  if (!imageModal.classList.contains("active")) return;
 
-/* ==================================================
-   ESCAPE HTML
-================================================== */
+  imageModal.classList.remove("active");
+  imageModal.setAttribute("aria-hidden", "true");
+  modalImage.src = "";
+  document.body.style.overflow = "";
 
-function escapeHTML(text) {
+  if (modalHistoryOpen) {
+    modalHistoryOpen = false;
 
-    return String(text)
-
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-
-        .replace(
-            /</g,
-            "&lt;"
-        )
-
-        .replace(
-            />/g,
-            "&gt;"
-        )
-
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-
-        .replace(
-            /'/g,
-            "&#039;"
-        );
-
+    if (!fromBackButton) {
+      history.back();
+    }
+  }
 }
 
+// Mobile/browser Back button closes the image popup.
+window.addEventListener("popstate", function() {
+  if (imageModal.classList.contains("active")) {
+    closeImage(true);
+  }
+});
 
-/* ==================================================
-   LOAD APPROVED REVIEWS
-================================================== */
+// Escape key closes the popup.
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeImage();
+  }
+});
+
+/* ESCAPE HTML */
+
+function escapeHTML(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+/* LOAD APPROVED REVIEWS */
 
 async function loadFeedback() {
+  const reviewsContainer = document.getElementById("reviews");
 
-    const reviewsContainer =
-        document.getElementById(
-            "reviews"
-        );
+  if (!supabaseClient) {
+    console.error("Supabase client is not initialized.");
+    return;
+  }
 
+  try {
+    const { data, error } = await supabaseClient
+      .from("feedback")
+      .select("name, message, rating, created_at")
+      .eq("approved", true)
+      .order("created_at", { ascending: false });
 
-    if (!supabaseClient) {
-
-        console.error(
-            "Supabase client is not initialized."
-        );
-
-        return;
-
+    if (error) {
+      console.error("Error loading reviews:", error);
+      return;
     }
 
+    reviewsContainer.innerHTML = "";
 
-    try {
+    if (!data || data.length === 0) return;
 
-        const {
-            data,
-            error
-        } =
-            await supabaseClient
+    data.forEach(function(review) {
+      let rating = Number(review.rating) || 0;
+      rating = Math.max(0, Math.min(5, rating));
 
-                .from("feedback")
+      const stars = "★".repeat(rating) + "☆".repeat(5 - rating);
 
-                .select(
-                    "name, message, rating, created_at"
-                )
+      const date = review.created_at
+        ? new Date(review.created_at).toLocaleDateString("en-IN")
+        : "";
 
-                .eq(
-                    "approved",
-                    true
-                )
+      const card = document.createElement("div");
+      card.className = "review-card";
 
-                .order(
-                    "created_at",
-                    {
-                        ascending:
-                            false
-                    }
-                );
+      card.innerHTML = `
+        <div class="review-stars">${stars}</div>
+        <div class="review-text">"${escapeHTML(review.message)}"</div>
+        <div class="review-name">— ${escapeHTML(review.name)}</div>
+        <div class="review-date">${escapeHTML(date)}</div>
+      `;
 
+      reviewsContainer.appendChild(card);
+    });
 
-        if (error) {
-
-            console.error(
-                "Error loading reviews:",
-                error
-            );
-
-            return;
-
-        }
-
-
-        reviewsContainer.innerHTML =
-            "";
-
-
-        if (
-            !data ||
-            data.length === 0
-        ) {
-
-            return;
-
-        }
-
-
-        data.forEach(
-            function(review) {
-
-
-                let rating =
-                    Number(
-                        review.rating
-                    ) || 0;
-
-
-                rating =
-                    Math.max(
-                        0,
-                        Math.min(
-                            5,
-                            rating
-                        )
-                    );
-
-
-                const stars =
-                    "★".repeat(
-                        rating
-                    )
-                    +
-                    "☆".repeat(
-                        5 - rating
-                    );
-
-
-                const date =
-                    new Date(
-                        review.created_at
-                    ).toLocaleDateString(
-                        "en-IN"
-                    );
-
-
-                const card =
-                    document.createElement(
-                        "div"
-                    );
-
-
-                card.className =
-                    "review-card";
-
-
-                card.innerHTML = `
-
-                    <div class="review-stars">
-                        ${stars}
-                    </div>
-
-                    <div class="review-text">
-                        "${escapeHTML(
-                            review.message
-                        )}"
-                    </div>
-
-                    <div class="review-name">
-                        — ${escapeHTML(
-                            review.name
-                        )}
-                    </div>
-
-                    <div class="review-date">
-                        ${date}
-                    </div>
-
-                `;
-
-
-                reviewsContainer.appendChild(
-                    card
-                );
-
-
-            }
-        );
-
-
-    }
-
-    catch (error) {
-
-        console.error(
-            "Unexpected review loading error:",
-            error
-        );
-
-    }
-
+  } catch (error) {
+    console.error("Unexpected review loading error:", error);
+  }
 }
 
-
-/* ==================================================
-   SUBMIT FEEDBACK
-================================================== */
+/* SUBMIT FEEDBACK */
 
 async function submitFeedback() {
+  const name = document.getElementById("customerName").value.trim();
+  const message = document.getElementById("customerFeedback").value.trim();
 
-    const name =
-        document
-            .getElementById(
-                "customerName"
-            )
-            .value
-            .trim();
+  const ratingElement = document.querySelector('input[name="rating"]:checked');
+  const status = document.getElementById("feedbackMessage");
+  const button = document.getElementById("submitFeedbackButton");
 
+  if (name.length < 2) {
+    status.textContent = "Please enter your name.";
+    return;
+  }
 
-    const message =
-        document
-            .getElementById(
-                "customerFeedback"
-            )
-            .value
-            .trim();
+  if (message.length < 5) {
+    status.textContent = "Please enter a little more feedback.";
+    return;
+  }
 
+  if (!supabaseClient) {
+    status.textContent = "Feedback system is not configured.";
+    return;
+  }
 
-    const ratingElement =
-        document.querySelector(
-            'input[name="rating"]:checked'
-        );
+  status.textContent = "Submitting your feedback...";
+  button.disabled = true;
+  button.textContent = "Submitting...";
 
+  try {
+    const { error } = await supabaseClient
+      .from("feedback")
+      .insert({
+        name: name,
+        message: message,
+        rating: Number(ratingElement ? ratingElement.value : 5),
+        approved: false
+      });
 
-    const status =
-        document.getElementById(
-            "feedbackMessage"
-        );
-
-
-    /* NAME VALIDATION */
-
-    if (
-        name.length < 2
-    ) {
-
-        status.textContent =
-            "Please enter your name.";
-
-        return;
-
+    if (error) {
+      console.error("Feedback submission error:", error);
+      status.textContent = "Unable to submit feedback. Please try again.";
+      return;
     }
 
+    document.getElementById("customerName").value = "";
+    document.getElementById("customerFeedback").value = "";
+    document.getElementById("star5").checked = true;
 
-    /* FEEDBACK VALIDATION */
+    status.textContent = "Thank you! Your feedback has been submitted!";
 
-    if (
-        message.length < 5
-    ) {
-
-        status.textContent =
-            "Please enter a little more feedback.";
-
-        return;
-
-    }
-
-
-    /* SUPABASE CHECK */
-
-    if (!supabaseClient) {
-
-        status.textContent =
-            "Feedback system is not configured.";
-
-        return;
-
-    }
-
-
-    status.textContent =
-        "Submitting your feedback...";
-
-
-    try {
-
-
-        const {
-            error
-        } =
-            await supabaseClient
-
-                .from("feedback")
-
-                .insert({
-
-                    name:
-                        name,
-
-                    message:
-                        message,
-
-                    rating:
-                        Number(
-                            ratingElement
-                                ? ratingElement.value
-                                : 5
-                        ),
-
-                    approved:
-                        false
-
-                });
-
-
-        if (error) {
-
-            console.error(
-                "Feedback submission error:",
-                error
-            );
-
-            status.textContent =
-                "Sorry, something went wrong. Please try again.";
-
-            return;
-
-        }
-
-
-        /* CLEAR FORM */
-
-        document
-            .getElementById(
-                "customerName"
-            )
-            .value =
-            "";
-
-
-        document
-            .getElementById(
-                "customerFeedback"
-            )
-            .value =
-            "";
-
-
-        status.textContent =
-            "Thank you! Your feedback has been submitted!";
-
-
-    }
-
-    catch (error) {
-
-        console.error(
-            "Unexpected feedback submission error:",
-            error
-        );
-
-        status.textContent =
-            "Sorry, something went wrong. Please try again.";
-
-    }
-
+  } catch (error) {
+    console.error("Unexpected feedback submission error:", error);
+    status.textContent = "Something went wrong. Please try again.";
+  } finally {
+    button.disabled = false;
+    button.textContent = "Submit Feedback";
+  }
 }
 
-
-/* ==================================================
-   LOAD REVIEWS
-================================================== */
+/* INITIAL LOAD */
 
 loadFeedback();
-
-
 </script>
 
-
 </body>
-
 </html>
 ```
